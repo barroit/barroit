@@ -1,8 +1,9 @@
-## Yo! Here is baioretto
+# Yo! Here is baioretto
 
 <a><img align="right" src="https://github-readme-stats.vercel.app/api?username=Ba1oretto&hide=prs,issues,contribs&count_private=true&show_icons=true&title_color=9400D3&text_color=FF1493&icon_color=fe1afe&bg_color=angle,FFC0CB,ffc0c6,ffc0c1,ffc0c0,ffc4c0,ffc8c0,ffccc0,ffd0c0,ffd4c0,ffd8c0,ffdcc0,ffe0c0,ffe4c0,ffe4c0,ffecc0,fff0c0,fff4c0,fff8c0,fffcc0,f9ffc0,f4ffc0,f4ffc0,e2ffc0&hide_border=true&locale=en&line_height=35"></a>
 
-### Now living in Beijing. Birthday is April, 6th.
+### living in Beijing
+### birthday is April, 6th.
 ### 十六歳、学生です。
 
 ### I have a bilibili account
