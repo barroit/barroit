@@ -26,7 +26,9 @@
 
 ### you can reach me at [sunjiamu@outlook.com](mailto:sunjiamu@outlook.com).
 
-
+<script>
+console.log('hello?')
+</script>
 
 <style> 
 .information.image{width:320px; height:120px;border:1px solid #F00;float:right}
