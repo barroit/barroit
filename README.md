@@ -6,6 +6,8 @@
 
 [![](https://img.shields.io/badge/dynamic/json?color=192640&label=steam%20friends&query=%24.data.totalSubs&suffix=%20&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3DsteamFriends%26queryKey%3D76561198969466418%26source%3DsteamGames%26queryKey%3D76561199219358010&style=plastic&logo=steam&labelColor=204b78)](https://steamcommunity.com/id/baioretto)
 
+[![Ba1oretto's GitHub stats](https://github-readme-stats.vercel.app/api?username=Ba1oretto&hide=prs,issues,contribs&count_private=true&show_icons=true&title_color=FF00FF&text_color=e0aa3e&icon_color=fe1afe&bg_color=angle,009973,00d5b0,00fbcf,00ffe3,00fff3,00fff3,00fff3)](https://github.com/Ba1oretto)
+
 <!--
 **Ba1oretto/Ba1oretto** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
