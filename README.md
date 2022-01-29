@@ -27,7 +27,10 @@
 
 ### <p align="center"> ☕ I'm now learning Java and also familiar Spring. <p>
   
-### <p align="center"> ⬇️ VMware Certified Professional ⬇️ <p>
+### <p align="center"> ⬇️ VMware Spring Professional ⬇️ </p>
 
+<div align="center"><a href="https://www.credly.com/badges/d4489ae6-91fa-44ca-a139-6d9520304290/public_url"><img src="https://user-images.githubusercontent.com/66552396/151642982-a9a3c82e-827f-4086-82d1-b5ce0d1d5f28.png" alt="vmware-spring-professional-2022"></a></div>
+  
+### <p align="center"> ⬇️ VMware Certified Professional ⬇️ </p>
+  
 <div align="center"><a href="https://www.credly.com/badges/1fa68c81-7333-4cf3-917a-6bbcec4bde26/public_url"><img src="https://user-images.githubusercontent.com/66552396/151163608-c042d456-23a7-49ff-82eb-7cd07bae445b.png" alt="vmware-certified-professional-application-modernization-develop-2022"></a></div>
-
