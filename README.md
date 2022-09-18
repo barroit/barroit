@@ -4,7 +4,7 @@
 
 ### 🏰 now living in Beijing.
 ### 🎉 birthday is April, 6th.
-### 🍥 十七歳、学生です 🍥
+### 🍥 十七歳、学生です、彼女がいますよ！ 🍥
 
 ### 📺 I have a bilibili account
 <a href="https://space.bilibili.com/361996128"><img src="https://img.shields.io/badge/bilibili-Ba1oretto-fb7299/?color=FFC0CB&style=plastic&logo=bilibili&labelColor=fb7299"></a> <a href="https://space.bilibili.com/361996128"><img src="https://img.shields.io/badge/dynamic/json?color=F0E68C&label=current%20fans&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dbilibili%26queryKey%3D361996128&style=plastic&logo=bilibili&labelColor=FFC0CB"></a>
