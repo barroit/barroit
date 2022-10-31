@@ -5,7 +5,6 @@
 ### 🏰 now living in Beijing.
 ### 🎉 birthday is April, 6th.
 ### 🍥 十七歳、学生です 🍥
-### 💕 彼女がいますよ！！！ 💕
 
 <a href="https://github.com/Ba1oretto"><img align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ba1oretto&layout=compact&hide_title=true&bg_color=angle,89a2ff,8992ff,898aff,8f89ff,9e89ff,ad89ff,bc89ff,cb89ff,da89ff,e989ff,f089ff,f789ff&text_color=FFD700&hide_border=true"></a>
 
