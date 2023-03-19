@@ -1,7 +1,7 @@
 # 🎆Yo! Here is baioretto🎆
 
 <a href="https://github.com/Ba1oretto">
-  <img align="right" src="https://github-readme-stats.vercel.app/api?username=Ba1oretto&hide=prs,issues,contribs&count_private=true&show_icons=true&title_color=9400D3&text_color=FF1493&icon_color=fe1afe&bg_color=angle,FFC0CB,ffc0c6,ffc0c1,ffc0c0,ffc4c0,ffc8c0,ffccc0,ffd0c0,ffd4c0,ffd8c0,ffdcc0,ffe0c0,ffe4c0,ffe4c0,ffecc0,fff0c0,fff4c0,fff8c0,fffcc0,f9ffc0,f4ffc0,f4ffc0,e2ffc0&hide_border=true&locale=en&line_height=35" />
+  <img align="right" src="https://github-readme-stats.vercel.app/api?username=barroit&hide=prs,issues,contribs&count_private=true&show_icons=true&title_color=9400D3&text_color=FF1493&icon_color=fe1afe&bg_color=angle,FFC0CB,ffc0c6,ffc0c1,ffc0c0,ffc4c0,ffc8c0,ffccc0,ffd0c0,ffd4c0,ffd8c0,ffdcc0,ffe0c0,ffe4c0,ffe4c0,ffecc0,fff0c0,fff4c0,fff8c0,fffcc0,f9ffc0,f4ffc0,f4ffc0,e2ffc0&hide_border=true&locale=en&line_height=35" />
 </a>
 
 ### 🏰 China Peking Miyun
@@ -10,7 +10,7 @@
 ### 🍥 十七歳、学生です 🍥
 
 <a href="https://github.com/Ba1oretto">
-  <img align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ba1oretto&layout=compact&hide_title=true&langs_count=10&bg_color=angle,89a2ff,8992ff,898aff,8f89ff,9e89ff,ad89ff,bc89ff,cb89ff,da89ff,e989ff,f089ff,f789ff&text_color=FFD700&hide_border=true">
+  <img align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=barroit&layout=compact&hide_title=true&langs_count=10&bg_color=angle,89a2ff,8992ff,898aff,8f89ff,9e89ff,ad89ff,bc89ff,cb89ff,da89ff,e989ff,f089ff,f789ff&text_color=FFD700&hide_border=true">
 </a>
 
 ### 📺 I have a bilibili account
@@ -34,8 +34,8 @@
   <img src="https://img.shields.io/badge/twitter-Baioretto-*/?color=1a8cd8&style=plastic&labelColor=deff74&logo=twitter">
 </a>
 
-<a href="https://github.com/Ba1oretto/ba1oretto.github.io">
-  <img align="right" src="https://github-readme-stats.vercel.app/api/pin/?username=Ba1oretto&repo=ba1oretto.github.io&show_owner=true&bg_color=angle,98fb98,9affa7,9affb4,9affc1,9affce,9affdb,9affe8,9afff5,9afbff,9aedff,9adfff,9ad8ff,9acaff,9abcff,9aaeff,9aaeff,a19aff,ae9aff&text_color=DB7093&hide_border=true">
+<a href="https://github.com/barroit/ba1oretto.github.io">
+  <img align="right" src="https://github-readme-stats.vercel.app/api/pin/?username=barroit&repo=ba1oretto.github.io&show_owner=true&bg_color=angle,98fb98,9affa7,9affb4,9affc1,9affce,9affdb,9affe8,9afff5,9afbff,9aedff,9adfff,9ad8ff,9acaff,9abcff,9aaeff,9aaeff,a19aff,ae9aff&text_color=DB7093&hide_border=true">
 </a>
 
 ### 📖 I'm a blogger, too. [baioretto.com](https://baioretto.com) is my website.
