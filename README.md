@@ -9,7 +9,7 @@
 ### 🎉 Born April 6, 2005
 ### 🍥 十七歳、学生です 🍥
 
-<a href="https://github.com/Ba1oretto">
+<a href="https://github.com/barroit">
   <img align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=barroit&layout=compact&hide_title=true&langs_count=10&bg_color=angle,89a2ff,8992ff,898aff,8f89ff,9e89ff,ad89ff,bc89ff,cb89ff,da89ff,e989ff,f089ff,f789ff&text_color=FFD700&hide_border=true">
 </a>
 
@@ -54,21 +54,3 @@
     <img src="https://user-images.githubusercontent.com/66552396/151642982-a9a3c82e-827f-4086-82d1-b5ce0d1d5f28.png" alt="vmware-spring-professional-2022" />
   </a>
 </div>
-
-```java
-public static void main(String ...args) {
-  System.out.println("test");
-}
-```
-
-
-`code`
-
-
-*a*
-
-
-**a**
-
-
-***a***
