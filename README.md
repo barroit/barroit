@@ -1,56 +1,67 @@
-# 🎆Yo! Here is baioretto🎆
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=0:0047D6FF,50:007BFF,100:00A6FF&height=180&text=BARROIT%20だよ！&animation=twinkling&fontColor=D8D8D4FF&fontSize=30&fontAlignY=37" alt="title" />
 
-<a href="https://github.com/Ba1oretto">
-  <img align="right" src="https://github-readme-stats.vercel.app/api?username=barroit&hide=prs,issues,contribs&count_private=true&show_icons=true&title_color=9400D3&text_color=FF1493&icon_color=fe1afe&bg_color=angle,FFC0CB,ffc0c6,ffc0c1,ffc0c0,ffc4c0,ffc8c0,ffccc0,ffd0c0,ffd4c0,ffd8c0,ffdcc0,ffe0c0,ffe4c0,ffe4c0,ffecc0,fff0c0,fff4c0,fff8c0,fffcc0,f9ffc0,f4ffc0,f4ffc0,e2ffc0&hide_border=true&locale=en&line_height=35" />
-</a>
-
-### 🏰 China Peking Miyun
-### 📕 Independent Developer, High School Student
-### 🎉 Born April 6, 2005
-### 🍥 十八歳、学生です 🍥
-
-<a href="https://github.com/barroit">
-  <img align="right" src="https://github-readme-stats.vercel.app/api/top-langs/?username=barroit&layout=compact&hide_title=true&langs_count=10&bg_color=angle,89a2ff,8992ff,898aff,8f89ff,9e89ff,ad89ff,bc89ff,cb89ff,da89ff,e989ff,f089ff,f789ff&text_color=FFD700&hide_border=true">
-</a>
-
-### 📺 I have a bilibili account
-<a href="https://space.bilibili.com/361996128">
-  <img src="https://img.shields.io/badge/bilibili-Ba1oretto-fb7299/?color=FFC0CB&style=plastic&logo=bilibili&labelColor=fb7299"></a> <a href="https://space.bilibili.com/361996128"><img src="https://img.shields.io/badge/dynamic/json?color=F0E68C&label=current%20fans&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dbilibili%26queryKey%3D361996128&style=plastic&logo=bilibili&labelColor=FFC0CB" />
-</a>
-
-### ⛳️ and there's my steam account 
-<a href="https://steamcommunity.com/id/baioretto">
-  <img src="https://img.shields.io/badge/steam-Baioretto-192640/?color=192640&style=plastic&logo=steam&labelColor=204b78" />
-</a>
-<a href="https://steamcommunity.com/id/ba1oretto" />
-  <img src="https://img.shields.io/badge/dynamic/json?color=192640&label=games&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3DsteamGames%26queryKey%3D76561198969466418%26source%3DsteamGames%26queryKey%3D76561199219358010&style=plastic&logo=steam&labelColor=204b78" />
-</a>
-<a href="https://steamcommunity.com/id/baioretto">
-  <img src="https://img.shields.io/badge/dynamic/json?color=192640&label=friends&query=%24.data.totalSubs&suffix=%20&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3DsteamFriends%26queryKey%3D76561198969466418%26source%3DsteamGames%26queryKey%3D76561199219358010&style=plastic&logo=steam&labelColor=204b78" />
-</a>
-
-### 🤺 also, I like surfing on the internet 
-<a href="https://twitter.com/barro1t">
-  <img src="https://img.shields.io/badge/twitter-Baioretto-*/?color=1a8cd8&style=plastic&labelColor=deff74&logo=twitter">
-</a>
-
-<a href="https://github.com/barroit/ba1oretto.github.io">
-  <img align="right" src="https://github-readme-stats.vercel.app/api/pin/?username=barroit&repo=ba1oretto.github.io&show_owner=true&bg_color=angle,98fb98,9affa7,9affb4,9affc1,9affce,9affdb,9affe8,9afff5,9afbff,9aedff,9adfff,9ad8ff,9acaff,9abcff,9aaeff,9aaeff,a19aff,ae9aff&text_color=DB7093&hide_border=true">
-</a>
-
-### 📖 I'm a blogger, too. [baioretto.com](https://baioretto.com) is my website.
-
-### 🔎 I like tossing, that's a big motivation for me to learn programming.
-
-### ✔️ you can reach me at [sunjiamu@outlook.com](mailto:sunjiamu@outlook.com).
-
-### <p align="center"> ☕ I'm now learning Java and also familiar Spring. </p>
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=35&pause=1000&center=true&vCenter=true&random=false&width=1000&lines=HELLO%2C+MY+NAME+%3D%3D+BARROIT;MY+EXPERIENCE+%3E+2+YEARS+IN+PROGRAMMING;IF+(LIKE+MY+WORK)+FOLLOW+%26%26+STAR;THX+:%29)](https://git.io/typing-svg)
 
 <div align="center">
-  <a href="https://www.credly.com/badges/1fa68c81-7333-4cf3-917a-6bbcec4bde26/public_url">
-    <img src="https://user-images.githubusercontent.com/66552396/151163608-c042d456-23a7-49ff-82eb-7cd07bae445b.png" alt="vmware-certified-professional-application-modernization-develop-2022" />
-  </a>
-  <a href="https://www.credly.com/badges/d4489ae6-91fa-44ca-a139-6d9520304290/public_url">
-    <img src="https://user-images.githubusercontent.com/66552396/151642982-a9a3c82e-827f-4086-82d1-b5ce0d1d5f28.png" alt="vmware-spring-professional-2022" />
-  </a>
+   <img width="90%" src="https://github-readme-activity-graph.vercel.app/graph?username=barroit&theme=github-dark&hide_border=true&area=true" alt="graph form stats" />
 </div>
+
+<div align="center">
+  <img width="48%" height="auto" src="https://github-readme-stats.vercel.app/api?username=barroit&show_icons=true&hide_border=true&title_color=00A6FF&icon_color=00A6FF&text_color=B6B6AFFF&bg_color=0D1117" alt="stats" />
+  <img width="35%" height="auto" src="https://github-readme-stats.vercel.app/api/top-langs/?username=barroit&layout=compact&hide_border=true&hide_title=true&text_color=B6B6AFFF&bg_color=0D1117" alt="top languages" />
+</div>
+
+<div align="center">
+  <img height="auto" width="91%" src="https://github-readme-streak-stats.herokuapp.com/?user=barroit&theme=github-dark-dimmed&hide_border=true&stroke=0000&background=0D1117&ring=9C81CAFF&fire=F5830AFF" alt="stats" />
+</div>
+
+### Languages:
+
+![Java](https://img.shields.io/badge/java-0D1117?style=for-the-badge&logo=oracle&logoColor=F80000)&nbsp;
+![TypeScript](https://img.shields.io/badge/typescript-0D1117?style=for-the-badge&logo=typescript&logoColor=3178C6)&nbsp;
+![C](https://img.shields.io/badge/c-0D1117?style=for-the-badge&logo=c&logoColor=A8B9CC)&nbsp;
+![C++](https://img.shields.io/badge/c++-0D1117?style=for-the-badge&logo=cplusplus&logoColor=00599C)&nbsp;
+![Python](https://img.shields.io/badge/python-0D1117?style=for-the-badge&logo=python&logoColor=3776AB)&nbsp;
+
+### Development Tools:
+
+![Ubuntu](https://img.shields.io/badge/ubuntu-0D1117?style=for-the-badge&logo=ubuntu&logoColor=E95420)&nbsp;
+![Vim](https://img.shields.io/badge/vim-0D1117?style=for-the-badge&logo=vim&logoColor=019733)&nbsp;
+![Git](https://img.shields.io/badge/git-0D1117?style=for-the-badge&logo=git&logoColor=F05032)&nbsp;
+![Docker](https://img.shields.io/badge/docker-0D1117?style=for-the-badge&logo=docker&logoColor=2496ED)&nbsp;
+![ChatGPT](https://img.shields.io/badge/chatgpt-0D1117?style=for-the-badge&logo=openai&logoColor=412991)&nbsp;
+![GNU Make](https://img.shields.io/badge/gnu_make-0D1117?style=for-the-badge&logo=gnu&logoColor=A42E2B)&nbsp;
+![CMake](https://img.shields.io/badge/cmake-0D1117?style=for-the-badge&logo=cmake&logoColor=064F8C)&nbsp;
+![Gradle](https://img.shields.io/badge/gradle-0D1117?style=for-the-badge&logo=gradle&logoColor=02303A)&nbsp;
+![Anaconda](https://img.shields.io/badge/anaconda-0D1117?style=for-the-badge&logo=anaconda&logoColor=44A833)&nbsp;
+
+### IDEs:
+
+![IntelliJ IDEA](https://img.shields.io/badge/intellij_idea-0D1117?style=for-the-badge&logo=intellijidea)&nbsp;
+![WebStorm](https://img.shields.io/badge/webstorm-0D1117?style=for-the-badge&logo=webstorm)&nbsp;
+![PyCharm](https://img.shields.io/badge/pycharm-0D1117?style=for-the-badge&logo=pycharm)&nbsp;
+
+### Frameworks:
+
+![Spring Boot](https://img.shields.io/badge/spring_boot-0D1117?style=for-the-badge&logo=springboot&logoColor=6DB33F)&nbsp;
+![Remix](https://img.shields.io/badge/remix-0D1117?style=for-the-badge&logo=remix)&nbsp;
+![Transformers](https://img.shields.io/badge/transformers-0D1117?style=for-the-badge&logo=huggingface)&nbsp;
+
+### Databases:
+
+![PostgreSQL](https://img.shields.io/badge/postgresql-0D1117?style=for-the-badge&logo=postgresql&logoColor=4169E1)&nbsp;
+![MySQL](https://img.shields.io/badge/mysql-0D1117?style=for-the-badge&logo=mysql&logoColor=4479A1)&nbsp;
+![SQLite](https://img.shields.io/badge/sqlite-0D1117?style=for-the-badge&logo=sqlite&logoColor=003B57)&nbsp;
+
+<div align="center">
+  <br />
+  <p align="centre">
+    <b>Visitors Count</b>
+  </p>
+  <p align="center">
+    <img align="center" src="https://profile-counter.glitch.me/{barroit}/count.svg" alt="visitors count" />
+  </p>
+  <br />
+</div>
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=0:0047D6FF,50:007BFF,100:00A6FF&height=120&section=footer" />
+
