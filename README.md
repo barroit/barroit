@@ -1,6 +1,6 @@
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=0:0047D6FF,50:007BFF,100:00A6FF&height=180&text=BARROIT%20だよ！&animation=twinkling&fontColor=D8D8D4FF&fontSize=30&fontAlignY=37" alt="title" />
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=35&pause=1000&center=true&vCenter=true&random=false&width=1000&lines=HELLO%2C+MY+NAME+%3D%3D+BARROIT;MY+EXPERIENCE+%3E+2+YEARS+IN+PROGRAMMING;IF+(LIKE+MY+WORK)+FOLLOW+%26%26+STAR;THX+:%29)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=35&pause=1000&center=true&vCenter=true&random=false&width=1000&lines=HELLO%2C+MY+NAME+%3D%3D+BARROIT;.MIKUFUN+%7B+z-index%3A+9999+%7D;EXPERIENCE+%3E+2+YEARS+IN+PROGRAMMING;IF+(LIKE+MY+WORK)+FOLLOW+%26%26+STAR;THX+:%29)](https://git.io/typing-svg)
 
 <div align="center">
    <img width="90%" src="https://github-readme-activity-graph.vercel.app/graph?username=barroit&theme=github-dark&hide_border=true&area=true" alt="graph form stats" />
@@ -22,8 +22,9 @@
 ![C](https://img.shields.io/badge/c-0D1117?style=for-the-badge&logo=c&logoColor=A8B9CC)&nbsp;
 ![C++](https://img.shields.io/badge/c++-0D1117?style=for-the-badge&logo=cplusplus&logoColor=00599C)&nbsp;
 ![Python](https://img.shields.io/badge/python-0D1117?style=for-the-badge&logo=python&logoColor=3776AB)&nbsp;
+![BashScript](https://img.shields.io/badge/bash_script-0D1117?style=for-the-badge&logo=gnubash&logoColor=4EAA25)&nbsp;
 
-### Development Tools:
+### Tools:
 
 ![Ubuntu](https://img.shields.io/badge/ubuntu-0D1117?style=for-the-badge&logo=ubuntu&logoColor=E95420)&nbsp;
 ![Vim](https://img.shields.io/badge/vim-0D1117?style=for-the-badge&logo=vim&logoColor=019733)&nbsp;
@@ -44,6 +45,7 @@
 ### Frameworks:
 
 ![Spring Boot](https://img.shields.io/badge/spring_boot-0D1117?style=for-the-badge&logo=springboot&logoColor=6DB33F)&nbsp;
+![VUE](https://img.shields.io/badge/vue_js-0D1117?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D)&nbsp;
 ![Remix](https://img.shields.io/badge/remix-0D1117?style=for-the-badge&logo=remix)&nbsp;
 ![Transformers](https://img.shields.io/badge/transformers-0D1117?style=for-the-badge&logo=huggingface)&nbsp;
 
@@ -52,6 +54,12 @@
 ![PostgreSQL](https://img.shields.io/badge/postgresql-0D1117?style=for-the-badge&logo=postgresql&logoColor=4169E1)&nbsp;
 ![MySQL](https://img.shields.io/badge/mysql-0D1117?style=for-the-badge&logo=mysql&logoColor=4479A1)&nbsp;
 ![SQLite](https://img.shields.io/badge/sqlite-0D1117?style=for-the-badge&logo=sqlite&logoColor=003B57)&nbsp;
+
+### Others:
+
+![MinecraftPlugin](https://img.shields.io/badge/spigot_plugin-0D1117?style=for-the-badge&logo=spigotmc&logoColor=ED8106)&nbsp;
+![DiscordBot](https://img.shields.io/badge/discord_bot-0D1117?style=for-the-badge&logo=discord&logoColor=5865F2)&nbsp;
+![HatsuneMiku](https://img.shields.io/badge/hatsune_miku_v4x-0D1117?style=for-the-badge&logo=youtubemusic&logoColor=0078D3)&nbsp;
 
 <div align="center">
   <br />
