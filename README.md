@@ -20,14 +20,14 @@
 ![Java](https://img.shields.io/badge/java-0D1117?style=for-the-badge&logo=oracle&logoColor=F80000)&nbsp;
 ![TypeScript](https://img.shields.io/badge/typescript-0D1117?style=for-the-badge&logo=typescript&logoColor=3178C6)&nbsp;
 ![C](https://img.shields.io/badge/c-0D1117?style=for-the-badge&logo=c&logoColor=A8B9CC)&nbsp;
+![BashScript](https://img.shields.io/badge/bash_script-0D1117?style=for-the-badge&logo=gnubash&logoColor=4EAA25)&nbsp;
 ![C++](https://img.shields.io/badge/c++-0D1117?style=for-the-badge&logo=cplusplus&logoColor=00599C)&nbsp;
 ![Python](https://img.shields.io/badge/python-0D1117?style=for-the-badge&logo=python&logoColor=3776AB)&nbsp;
-![BashScript](https://img.shields.io/badge/bash_script-0D1117?style=for-the-badge&logo=gnubash&logoColor=4EAA25)&nbsp;
+![JavaScript](https://img.shields.io/badge/javascript-0D1117?style=for-the-badge&logo=javascript&logoColor=F7DF1E)&nbsp;
 
 ### Tools:
 
 ![Ubuntu](https://img.shields.io/badge/ubuntu-0D1117?style=for-the-badge&logo=ubuntu&logoColor=E95420)&nbsp;
-![Vim](https://img.shields.io/badge/vim-0D1117?style=for-the-badge&logo=vim&logoColor=019733)&nbsp;
 ![Git](https://img.shields.io/badge/git-0D1117?style=for-the-badge&logo=git&logoColor=F05032)&nbsp;
 ![Docker](https://img.shields.io/badge/docker-0D1117?style=for-the-badge&logo=docker&logoColor=2496ED)&nbsp;
 ![ChatGPT](https://img.shields.io/badge/chatgpt-0D1117?style=for-the-badge&logo=openai&logoColor=412991)&nbsp;
@@ -36,9 +36,10 @@
 ![Gradle](https://img.shields.io/badge/gradle-0D1117?style=for-the-badge&logo=gradle&logoColor=02303A)&nbsp;
 ![Anaconda](https://img.shields.io/badge/anaconda-0D1117?style=for-the-badge&logo=anaconda&logoColor=44A833)&nbsp;
 
-### IDEs:
+### Editors:
 
-![IntelliJ IDEA](https://img.shields.io/badge/intellij_idea-0D1117?style=for-the-badge&logo=intellijidea)&nbsp;
+![Vim](https://img.shields.io/badge/vim-0D1117?style=for-the-badge&logo=vim&logoColor=019733)&nbsp;
+![Visual Studio Code](https://img.shields.io/badge/visual_studio_code-0D1117?style=for-the-badge&logo=visualstudiocode&logoColor=007ACC)&nbsp;
 ![WebStorm](https://img.shields.io/badge/webstorm-0D1117?style=for-the-badge&logo=webstorm)&nbsp;
 ![PyCharm](https://img.shields.io/badge/pycharm-0D1117?style=for-the-badge&logo=pycharm)&nbsp;
 
