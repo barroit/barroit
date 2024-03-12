@@ -1,6 +1,6 @@
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=0:0047D6FF,50:007BFF,100:00A6FF&height=180&text=BARROIT%20だよ！&animation=twinkling&fontColor=D8D8D4FF&fontSize=30&fontAlignY=37" alt="title" />
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=0:0047D6FF,50:007BFF,100:00A6FF&height=180&text=BARROIT%20と申します！&animation=twinkling&fontColor=D8D8D4FF&fontSize=30&fontAlignY=37" alt="title" />
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=35&pause=1000&center=true&vCenter=true&random=false&width=1000&lines=HELLO%2C+MY+NAME+%3D%3D+BARROIT;.MIKUFUN+%7B+z-index%3A+9999+%7D;EXPERIENCE+%3E+2+YEARS+IN+PROGRAMMING;IF+(LIKE+MY+WORK)+FOLLOW+%26%26+STAR;THX+:%29)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=35&pause=1500&center=true&vCenter=true&random=false&width=1000&lines=LANG+%3D+English+%7C+%E6%97%A5%E6%9C%AC%E8%AA%9E+%7C+%E4%B8%AD%E6%96%87;.MIKUFUN+%7B+z-index%3A+9999+%7D;THX+%3A%3E)](https://git.io/typing-svg)
 
 <div align="center">
    <img width="90%" src="https://github-readme-activity-graph.vercel.app/graph?username=barroit&theme=github-dark&hide_border=true&area=true" alt="graph form stats" />
