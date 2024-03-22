@@ -24,6 +24,7 @@
 ![C++](https://img.shields.io/badge/c++-0D1117?style=for-the-badge&logo=cplusplus&logoColor=00599C)&nbsp;
 ![Python](https://img.shields.io/badge/python-0D1117?style=for-the-badge&logo=python&logoColor=3776AB)&nbsp;
 ![JavaScript](https://img.shields.io/badge/javascript-0D1117?style=for-the-badge&logo=javascript&logoColor=F7DF1E)&nbsp;
+![Perl](https://img.shields.io/badge/perl-0D1117?style=for-the-badge&logo=perl&logoColor=39457E)&nbsp;
 
 ### Tools:
 
@@ -40,8 +41,6 @@
 
 ![Vim](https://img.shields.io/badge/vim-0D1117?style=for-the-badge&logo=vim&logoColor=019733)&nbsp;
 ![Visual Studio Code](https://img.shields.io/badge/visual_studio_code-0D1117?style=for-the-badge&logo=visualstudiocode&logoColor=007ACC)&nbsp;
-![WebStorm](https://img.shields.io/badge/webstorm-0D1117?style=for-the-badge&logo=webstorm)&nbsp;
-![PyCharm](https://img.shields.io/badge/pycharm-0D1117?style=for-the-badge&logo=pycharm)&nbsp;
 
 ### Frameworks:
 
