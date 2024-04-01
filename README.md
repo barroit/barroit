@@ -3,16 +3,8 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=35&pause=1500&center=true&vCenter=true&random=false&width=1000&lines=LANG+%3D+English+%7C+%E6%97%A5%E6%9C%AC%E8%AA%9E+%7C+%E4%B8%AD%E6%96%87;.MIKUFUN+%7B+z-index%3A+9999+%7D;THX+%3A%3E)](https://git.io/typing-svg)
 
 <div align="center">
-   <img width="90%" src="https://github-readme-activity-graph.vercel.app/graph?username=barroit&theme=github-dark&hide_border=true&area=true" alt="graph form stats" />
-</div>
-
-<div align="center">
   <img width="48%" height="auto" src="https://github-readme-stats.vercel.app/api?username=barroit&show_icons=true&hide_border=true&title_color=00A6FF&icon_color=00A6FF&text_color=B6B6AFFF&bg_color=0D1117" alt="stats" />
   <img width="35%" height="auto" src="https://github-readme-stats.vercel.app/api/top-langs/?username=barroit&layout=compact&hide_border=true&hide_title=true&text_color=B6B6AFFF&bg_color=0D1117" alt="top languages" />
-</div>
-
-<div align="center">
-  <img height="auto" width="91%" src="https://github-readme-streak-stats.herokuapp.com/?user=barroit&theme=github-dark-dimmed&hide_border=true&stroke=0000&background=0D1117&ring=9C81CAFF&fire=F5830AFF" alt="stats" />
 </div>
 
 ### Languages:
@@ -36,6 +28,7 @@
 ![CMake](https://img.shields.io/badge/cmake-0D1117?style=for-the-badge&logo=cmake&logoColor=064F8C)&nbsp;
 ![Gradle](https://img.shields.io/badge/gradle-0D1117?style=for-the-badge&logo=gradle&logoColor=02303A)&nbsp;
 ![Anaconda](https://img.shields.io/badge/anaconda-0D1117?style=for-the-badge&logo=anaconda&logoColor=44A833)&nbsp;
+![VirtualBox](https://img.shields.io/badge/virtual_box-0D1117?style=for-the-badge&logo=virtualbox&logoColor=183A61)&nbsp;
 
 ### Editors:
 
