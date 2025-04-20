@@ -22,7 +22,7 @@ new=$2
 file=$3
 rep="SPDX-License-Identifier: $2"
 
-if ! perl -ne 'exit 1 if /\0/' $file; then
+if [ ! -f $file ] || ! perl -ne 'exit 1 if /\0/' $file; then
 	exit
 fi
 
@@ -37,6 +37,7 @@ fi
 
 >$tmp
 exec >> $tmp
+trap 'rm -f $tmp' EXIT
 
 case $lines in
 '// '*)
@@ -53,13 +54,16 @@ case $lines in
 	printf '%s\n' "# $rep"
 	;;
 *)
+	if [ $file = FIXLICENSE ]; then
+		exit
+	fi
+
 	die "unknown line format in $file"
-	;;
 esac
 
 tail -n+$pos $file
 
-mode=$(stat -c %a $file)
+perm=$(perl -e 'printf "%o\n", (stat shift)[2] & 07777' $file)
 
 mv $tmp $file
-chmod $mode $file
+chmod $perm $file
