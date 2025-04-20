@@ -7,7 +7,6 @@ this=$(perl -e 'use Cwd "abs_path"; print abs_path(shift); "\n"' $0)
 root=$(dirname $this)/..
 
 . $root/posix/libkit.sh
-. $root/posix/libsetup.sh
 
 if [ -z "$1" ]; then
 	die 'missing merge source
