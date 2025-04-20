@@ -1,7 +1,7 @@
 #!/bin/zsh
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-if ! exec_is_foce && setup_is_done; then
+if ! exec_is_force && setup_is_done; then
 	log 'Installing macfuse ... Skipped'
 	exit
 fi

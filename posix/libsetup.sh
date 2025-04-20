@@ -15,7 +15,7 @@ setup_done()
 	fi
 }
 
-exec_is_foce()
+exec_is_force()
 {
 	test $SCRIPT_NAME = "$FORCE_EXEC"
 }
