@@ -144,7 +144,7 @@ ini_section()
 
 ini_section_st()
 {
-	ret=$(section $1 $2)
+	ret=$(ini_section $1 $2)
 
 	if [ -z "$ret" ]; then
 		die "no matching section $1 found in $2"
