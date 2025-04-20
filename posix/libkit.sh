@@ -136,3 +136,19 @@ line_need_skip()
 		return 1
 	esac
 }
+
+ini_section()
+{
+	perl -ne "print if /^\[$1\]$/ .. /^\[end$1\]$/ and !/^\[.*\]$/" $2
+}
+
+ini_section_st()
+{
+	ret=$(section $1 $2)
+
+	if [ -z "$ret" ]; then
+		die "no matching section $1 found in $2"
+	fi
+
+	printf '%s\n' "$ret"
+}
