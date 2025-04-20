@@ -1,9 +1,14 @@
+autoconf
+cmake
 discord			cask
 fastfetch
 gnupg
 google-chrome		cask
+lld
+llvm			-	/opt/homebrew/opt/llvm/bin
 make			-	/opt/homebrew/opt/make/libexec/gnubin
 mutt
+ninja
 pipx			-	$HOME/.local/bin
 python3
 visual-studio-code	cask
