@@ -1,7 +1,7 @@
 #!/bin/sh
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-if ! exec_is_foce && [[ $(which gcc) == $HOME* ]]; then
+if ! exec_is_force && [[ $(which gcc) == $HOME* ]]; then
 	log 'Compiling GCC ... Skipped'
 	exit
 fi

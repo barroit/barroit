@@ -1,7 +1,7 @@
 #!/bin/bash
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-if ! exec_is_foce && [[ $(which vim) == $HOME* ]]; then
+if ! exec_is_force && [[ $(which vim) == $HOME* ]]; then
 	log 'Compiling Vim ... Skipped'
 	exit
 fi
