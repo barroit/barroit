@@ -17,3 +17,11 @@ set backspace=indent,eol,start
 set ruler
 
 colorscheme barroit
+
+if has('macunix')
+	map <Esc>f w
+	map <Esc>b b
+
+	imap <Esc>f <Esc>wi
+	imap <Esc>b <Esc>bi
+endif
