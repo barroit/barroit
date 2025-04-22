@@ -44,7 +44,7 @@ if [ -n "$1" ]; then
 	fi
 fi
 
-scripts=${scripts:-$(find $script_root -type f -name [0-9][0-9]-*.sh | sort)}
+scripts=${scripts:-$(find $script_root -name [0-9][0-9]-*.sh | sort)}
 
 for script in $scripts; do
 	$script_root/exec.sh $script
