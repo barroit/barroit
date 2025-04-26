@@ -1,4 +1,5 @@
 #!/bin/sh
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-sed -i '' '/^. Please enter the commit message/,/^#$/d' $1
+sed '/^. Please enter the commit message/,/^#$/d' $1 > $1.tmp
+mv $1.tmp $1
