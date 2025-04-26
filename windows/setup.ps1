@@ -9,7 +9,7 @@ $scripts = Get-ChildItem -Name -Filter ??-*.ps1 $PSScriptRoot
 if ($args.Length) {
 	$name = $args[0]
 
-	if ($name[0] -eq '!') {
+	if ($name[0] -eq '+') {
 		$force = 1
 		$name = $name.Substring(1);
 	}
