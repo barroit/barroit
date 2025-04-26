@@ -3,6 +3,6 @@ Kitware.CMake
 LLVM.LLVM			$Env:PROGRAMFILES\LLVM\bin
 Microsoft.VisualStudioCode	d
 Ninja-build.Ninja
-Python.Python.3.13
+Python.Python.3.10
 StrawberryPerl.StrawberryPerl	v
 vim.vim				$Env:PROGRAMFILES\Vim\vim91
