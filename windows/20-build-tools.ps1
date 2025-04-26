@@ -20,5 +20,10 @@ winget install --id=$id --custom="`"--add $vctool --add $sdk --add $asan`""
 
 env-path-append "${Env:PROGRAMFILES(x86)}\Microsoft Visual Studio\Installer"
 
+$root = & vswhere.exe -products * -requires *.ASAN -property installationPath
+$msvc = (Get-ChildItem "$root\VC\Tools\MSVC").FullName
+
+env-path-append "$msvc\bin\Hostx64\x64"
+
 sr_done (script_name)
 log 'Installing BuildTools ... OK'
