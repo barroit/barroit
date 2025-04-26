@@ -14,8 +14,9 @@ if ($Env:PROCESSOR_ARCHITECTURE -eq 'ARM64') {
 }
 
 $sdk = 'Microsoft.VisualStudio.Component.Windows11SDK.26100'
+$asan = 'Microsoft.VisualStudio.Component.VC.ASAN'
 
-winget install --id=$id --custom="`"--add $vctool --add $sdk`""
+winget install --id=$id --custom="`"--add $vctool --add $sdk --add $asan`""
 
 env-path-append "${Env:PROGRAMFILES(x86)}\Microsoft Visual Studio\Installer"
 
