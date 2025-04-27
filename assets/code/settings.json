@@ -25,6 +25,8 @@
 	"explorer.confirmDragAndDrop": false,
 	"explorer.confirmDelete": false,
 	"extensions.ignoreRecommendations": true,
+	"typescript.validate.enable": false,
+	"javascript.validate.enable": false,
 /* ---------------------------  Srouce Control  ---------------------------- */
 	"scm.showActionButton": false,
 	"git.showCommitInput": false,
@@ -49,6 +51,9 @@
 		"editor.indentSize": 2
 	},
 	"[jsonc]": {
+		"editor.tabSize": 3
+	},
+	"[json]": {
 		"editor.tabSize": 3
 	},
 	"[xml]": {
