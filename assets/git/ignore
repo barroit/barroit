@@ -1,17 +1,17 @@
-.gdbinit
-.lldbinit
+/.gdbinit
+/.lldbinit
 
-.tmp*
+/.tmp*
 
-core.*
-vgcore.*
+/core.*
+/vgcore.*
 
-perf.data*
+/perf.data*
 
-.*.swp
+/.*.swp
 
-.config
-.config.unix*
-.config.win32*
+/.config
+/.config.unix*
+/.config.win32*
 
-node_modules
+/node_modules
