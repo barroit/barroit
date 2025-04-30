@@ -95,6 +95,9 @@
 		"zsh": [
 			"#!/bin/zsh",
 			"# SPDX-License-Identifier: ${license}"
+		],
+		"rst": [
+			".. SPDX-License-Identifier: ${license}"
 		]
 	},
 /* ------------------------------  CodeSnap  ------------------------------- */
