@@ -6,6 +6,14 @@ script_root=$(dirname $script_path)
 
 . $script_root/../posix/libkit.sh
 
+if [ ! -f NAME ]; then
+	die 'missing NAME file'
+fi
+
+if [ ! -f VERSION ]; then
+	die 'missing VERSION file'
+fi
+
 if [ ! "$(git diff VERSION)" ] &&
    [ ! "$(git diff --staged VERSION)" ] &&
    [ $(git ls-files VERSION) ]; then
