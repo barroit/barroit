@@ -18,6 +18,11 @@ Host dev.macos
 	IdentityFile ~/.ssh/id_dev_macos
 	IdentitiesOnly yes
 
+Host dev.ubuntu
+	HostName ubuntu.dev
+	IdentityFile ~/.ssh/id_dev_ubuntu
+	IdentitiesOnly yes
+
 Host github.com
 	HostName github.com
 	User git
