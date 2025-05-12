@@ -1,6 +1,22 @@
 {
 	"files.associations": {
-		"**/assets/**": "plaintext",
+		"**/assets/chatgpt/commit": "plaintext",
+		"**/assets/fastfetch/dotmiku": "plaintext",
+		"**/assets/gdb/gdbinit": "plaintext",
+		"**/assets/git/.gitconfig": "plaintext",
+		"**/assets/git/ignore": "plaintext",
+		"**/assets/mutt/.mailcap": "plaintext",
+		"**/assets/mutt/.muttrc": "plaintext",
+		"**/assets/mutt/.signature": "plaintext",
+		"**/assets/mutt/xoauth2": "plaintext",
+		"**/assets/sony/wf-vocaloid": "plaintext",
+		"**/assets/sony/wf-vocaloid++": "plaintext",
+		"**/assets/sony/wh-vocaloid": "plaintext",
+		"**/assets/sony/wh-vocaloid++": "plaintext",
+		"**/assets/ssh/config": "plaintext",
+		"**/assets/vim/.vimrc": "plaintext",
+		"**/assets/xmodmap/.Xmodmap": "plaintext",
+
 		"**/config/**": "plaintext",
 		"**/docs/**": "plaintext",
 		"**/docs/**/*.rst": "restructuredtext"
