@@ -57,6 +57,12 @@ if path.exists(client_file):
 			pair = re.split('\t+', line)
 			client[pair[0]] = pair[1]
 
+if 'id' not in client:
+	client['id'] = ''
+
+if 'user' not in client:
+	client['user'] = ''
+
 if 'secret' not in client:
 	client['secret'] = ''
 else:
@@ -114,11 +120,16 @@ to test the IMAP/POP/SMTP endpoints.
 ''')
 ap.add_argument('-v', '--verbose', action='store_true', help='increase verbosity')
 ap.add_argument('-d', '--debug', action='store_true', help='enable debug output')
-ap.add_argument('tokenfile', help='persistent token storage')
+ap.add_argument('tokenfile', nargs='?', help='persistent token storage')
 ap.add_argument('-a', '--authorize', action='store_true', help='manually authorize new tokens')
 ap.add_argument('--authflow', help='authcode | localhostauthcode | devicecode')
 ap.add_argument('-t', '--test', action='store_true', help='test IMAP/POP/SMTP endpoints')
+ap.add_argument('--show-secret', action='store_true', help='print secret and exit')
 args = ap.parse_args()
+
+if args.show_secret:
+	print(client['secret'])
+	exit(0)
 
 token = {}
 path = Path(args.tokenfile)
