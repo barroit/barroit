@@ -1,0 +1,4 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+set smtp_pass = `~/.mutt/oauth2.py --show-secret`
+set imap_pass = $smtp_pass
