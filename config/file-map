@@ -2,7 +2,7 @@ code/keybindings.json	$HOME/.config/Code/User
 code/settings.json	$HOME/.config/Code/User
 
 fastfetch/config.jsonc	$HOME/.config/fastfetch
-fastfetch/dotmiku	$HOME/.config/fastfetch	copy
+fastfetch/dotmiku	$HOME/.config/fastfetch
 
 gdb/gdbinit		$HOME/.config/gdb
 gdb/hexdump.py		$HOME/.config/gdb
