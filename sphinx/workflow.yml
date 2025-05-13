@@ -39,11 +39,11 @@ jobs:
          - run: pip install sphinx==8.2.3
 
          - run: make html
-           working-directory: ./Documentation
+           working-directory: master/Documentation
 
          - uses: actions/upload-pages-artifact@v3
            with:
-              path: ./Documentation/build/html
+              path: master/Documentation/build/html
 
    deploy:
       needs:   build

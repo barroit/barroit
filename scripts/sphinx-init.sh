@@ -8,7 +8,10 @@ script_root=$(dirname $script_path)
 sphinx_root=$script_root/../sphinx
 
 mkdir -p .github/workflows
-ln -sf ../../../barroit/sphinx/workflow.yml .github/workflows/docs.yml
+mkdir -p LICENSES
+
+cp -f ../barroit/sphinx/workflow.yml .github/workflows/docs.yml
+cp -f ../barroit/LICENSES/0BSD LICENSES/0BSD
 
 mkdir -p Documentation
 cd Documentation
