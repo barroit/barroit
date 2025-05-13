@@ -11,7 +11,10 @@ mkdir -p .github/workflows
 mkdir -p LICENSES
 
 cp -f ../barroit/sphinx/workflow.yml .github/workflows/docs.yml
-cp -f ../barroit/LICENSES/0BSD LICENSES/0BSD
+
+if [ ! -f LICENSES/0BSD ]; then
+	cp ../barroit/LICENSES/0BSD LICENSES/0BSD
+fi
 
 mkdir -p Documentation
 cd Documentation
