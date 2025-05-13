@@ -55,6 +55,7 @@
       "editor.tabSize": 3
    },
    "[json]": {
+      "editor.insertSpaces": true,
       "editor.tabSize": 3
    },
    "[xml]": {
@@ -264,9 +265,12 @@
                "support.function.js",
                "support.function.misc.css",
                "support.function.powershell",
+               "support.function.target.PHONY.makefile",
                "support.function.ts",
                "support.function.tsx",
+               "support.type",
                "support.type.object.module.js",
+               "support.type.primitive.ts",
                "support.type.property-name.css",
                "support.type.property-name.json.comments",
                "support.type.python",
