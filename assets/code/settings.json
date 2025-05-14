@@ -2,7 +2,7 @@
    /* -------------------------------  Window  -------------------------------- */
    "workbench.activityBar.location": "top",
    "window.restoreWindows": "none",
-   "window.zoomLevel": 4,
+   "window.zoomLevel": 1,
    "explorer.autoReveal": false,
    /* -------------------------------  Editor  -------------------------------- */
    "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "off",
@@ -27,7 +27,7 @@
    "extensions.ignoreRecommendations": true,
    "typescript.validate.enable": false,
    "javascript.validate.enable": false,
-   /* ---------------------------  Srouce Control  ---------------------------- */
+   /* ---------------------------  Source Control  ---------------------------- */
    "scm.showActionButton": false,
    "git.showCommitInput": false,
    "git.openRepositoryInParentFolders": "never",
