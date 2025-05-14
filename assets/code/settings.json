@@ -2,7 +2,7 @@
    /* -------------------------------  Window  -------------------------------- */
    "workbench.activityBar.location": "top",
    "window.restoreWindows": "none",
-   "window.zoomLevel": 4,
+   "window.zoomLevel": 1,
    "explorer.autoReveal": false,
    /* -------------------------------  Editor  -------------------------------- */
    "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "off",
