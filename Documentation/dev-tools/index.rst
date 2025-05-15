@@ -19,3 +19,4 @@ one wants to develop on Windows and eat their piece of shit scripting quirks.
    :maxdepth: 1
 
    bump-version
+   fix-license
