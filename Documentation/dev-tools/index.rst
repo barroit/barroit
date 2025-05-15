@@ -21,3 +21,4 @@ one wants to develop on Windows and eat their piece of shit scripting quirks.
    bump-version
    fix-license
    map-darconf
+   mount-wasabi
