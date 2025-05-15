@@ -53,6 +53,9 @@ case $lines in
 '# '*)
 	printf '%s\n' "# $rep"
 	;;
+'.. '*)
+	printf '%s\n' ".. $rep"
+	;;
 *)
 	if [ $file = FIXLICENSE ]; then
 		exit
