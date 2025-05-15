@@ -9,8 +9,13 @@ your life, but only if you use them correctly and follow the workflows.
 Otherwise, they may mess things up.
 
 If a script supports symlink, it says so after the title. If not, just don't
-symlink it.
+symlink it. Scripts that allow symlinking also require Perl.
 
 Some scripts are platform-specific. Use them only on the right platform. And
 the most important thing: none of these scripts support dumbass Windows. No
 one wants to develop on Windows and eat their piece of shit scripting quirks.
+
+.. toctree::
+   :maxdepth: 1
+
+   bump-version
