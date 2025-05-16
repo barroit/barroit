@@ -6,6 +6,8 @@ Bump Version
 
 Symlinking this file is okay.
 
+Your cwd must be repo root.
+
 SYNOPSIS
 ========
 
@@ -18,5 +20,6 @@ DESCRIPTION
 
 Commit a version change in VERSION and make a GPG-signed tag.
 
-Commit title is '$name v$version'. *name* is read from NAME, *version* from
-VERSION. Make sure these files exist in repo root.
+Commit title format is '$name v$version'. ``$name`` is read from ../NAME, and
+``$version`` from ../VERSION. You must also have a valid GPG key and ensure git
+uses this key by default.
