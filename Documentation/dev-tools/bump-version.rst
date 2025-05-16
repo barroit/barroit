@@ -20,6 +20,6 @@ DESCRIPTION
 
 Commit a version change in VERSION and make a GPG-signed tag.
 
-Commit title format is '$name v$version'. ``$name`` is read from ../NAME, and
-``$version`` from ../VERSION. You must also have a valid GPG key and ensure git
+Commit title format is '$name v$version'. ``$name`` is read from ./NAME, and
+``$version`` from ./VERSION. You must also have a valid GPG key and ensure git
 uses this key by default.
