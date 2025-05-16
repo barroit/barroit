@@ -10,6 +10,8 @@ git push
 git add .
 git commit -smTMP
 
+trap 'git reset --hard HEAD^' EXIT
+
 if [ "$(uname -o)" = 'GNU/Linux' ]; then
 	host=dev.macos
 else
@@ -24,11 +26,12 @@ export PATH=\$HOME/.local/bin:\$PATH
 
 git switch $branch
 
-git pull
-git reset --hard \$(git rev-parse --abbrev-ref --symbolic-full-name @{u})
+track=\$(git rev-parse --abbrev-ref --symbolic-full-name @{u})
+remote=\${track%%/*}
+
+git fetch \$remote
+git reset --hard \$track
 
 git am -
 git reset HEAD^
 "
-
-git reset --hard HEAD^
