@@ -27,3 +27,4 @@ one wants to develop on Windows and eat their piece of shit scripting quirks.
    sphinx-init
    sync-repo
    umount-wasabi
+   vmksign
