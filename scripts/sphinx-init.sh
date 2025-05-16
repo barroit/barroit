@@ -3,10 +3,6 @@
 
 set -e
 
-script_path=$(perl -e 'use Cwd "abs_path"; print abs_path(shift); "\n"' $0)
-script_root=$(dirname $script_path)
-sphinx_root=$script_root/../sphinx
-
 mkdir -p .github/workflows
 mkdir -p LICENSES
 
