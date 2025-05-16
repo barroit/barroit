@@ -25,3 +25,4 @@ one wants to develop on Windows and eat their piece of shit scripting quirks.
    mount-wasabi
    setup-repo
    sphinx-init
+   sync-repo
