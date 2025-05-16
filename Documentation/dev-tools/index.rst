@@ -9,7 +9,8 @@ your life, but only if you use them correctly and follow the workflows.
 Otherwise, they may mess things up.
 
 If a script supports symlink, it says so after the title. If not, just don't
-symlink it. Scripts that allow symlinking also require Perl.
+symlink it. Scripts that allow symlinking also require Perl, unless they're
+not POSIX-compliant.
 
 Some scripts are platform-specific. Use them only on the right platform. And
 the most important thing: none of these scripts support dumbass Windows. No
