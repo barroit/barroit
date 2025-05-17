@@ -6,7 +6,7 @@ Map Darconf
 
 Symlinking this file is okay.
 
-Your cwd must be path/to/this/doc/dir/../..
+You must be at the root of this repo.
 
 SYNOPSIS
 ========
@@ -18,8 +18,12 @@ SYNOPSIS
 DESCRIPTION
 ===========
 
-Add a worktree at ../barroit-macos and symlink worktree-modified files to
-destination, which is read from config/file-map-macos.
+This script adds a worktree at ``../barroit-macos`` and makes symlinks from
+that worktree to destination files. It greps destinations from
+``config/file-map-macos``. The list of symlink sources is hardcoded. Currently,
+that list includes:
 
-This script only creates worktree ../barroit-macos if it doesn't exist. It
-never updates that worktree.
+   - code/settings.json
+
+This script only creates worktree if it doesn't exist. It never updates that
+worktree.

@@ -122,7 +122,7 @@ r3()
 
 r4()
 {
-	printf %s "$1" | awk -F'\t++' '{print $4}'
+	printf %s "$1" | awk -F'\t+' '{print $4}'
 }
 
 line_need_skip()

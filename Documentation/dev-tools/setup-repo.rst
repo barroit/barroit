@@ -6,9 +6,9 @@ Setup Repository
 
 Symlinking this file is okay.
 
-Core library must exist at same level as your repo.
+This repo must exist at same level as your repo.
 
-Your cwd must be repo root.
+Your cwd must be the root of your repo.
 
 SYNOPSIS
 ========
