@@ -9,7 +9,7 @@ Symlinking this file is okay.
 This script is not for you. You must do lots of stuff and align with barroit's
 workflow to make it work for you.
 
-Your cwd must be repo root.
+Your cwd must be the root of your repo.
 
 SYNOPSIS
 ========

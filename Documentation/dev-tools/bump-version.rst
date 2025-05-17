@@ -6,7 +6,11 @@ Bump Version
 
 Symlinking this file is okay.
 
-Your cwd must be repo root.
+Your cwd must contain ``NAME`` and ``VERSION``.
+
+You can't use newlines or whitespaces in ``NAME`` or ``VERSION``.
+
+You must have a valid GPG key and ensure git uses this key by default.
 
 SYNOPSIS
 ========
@@ -18,8 +22,13 @@ SYNOPSIS
 DESCRIPTION
 ===========
 
-Commit a version change in VERSION and make a GPG-signed tag.
+This script commits a version change in ``VERSION`` and makes a GPG-signed tag.
+Commit title is::
 
-Commit title format is '$name v$version'. ``$name`` is read from ./NAME, and
-``$version`` from ./VERSION. You must also have a valid GPG key and ensure git
-uses this key by default.
+	printf("%s v%s\n", name, version)
+
+And tag name is::
+
+	printf("v%s", version)
+
+Both commit and tag contain a trailing ``Signed-off-by`` line.

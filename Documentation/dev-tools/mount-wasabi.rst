@@ -8,7 +8,7 @@ Symlinking this file is okay.
 
 Don't run this manually unless you know what you're doing.
 
-You must set up Wasabi via ``./<os>/setup.sh wasabi`` before running this.
+You must set up Wasabi via ``./<os>/setup.sh wasabi`` in this repo.
 
 SYNOPSIS
 ========
