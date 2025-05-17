@@ -8,3 +8,4 @@ Libkit Concepts
    :maxdepth: 1
 
    what-is-libkit
+   extending
