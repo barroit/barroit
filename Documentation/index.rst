@@ -13,15 +13,15 @@ Half of the documents are not for you. Undocumented script or file means it's
 tailored for barroit's environment and totally useless for you. To make this
 repo suit your needs, you'll likely have to do a lot of work.
 
-Table below lists available features of the core.
+Here's a list of available features of the core:
 
 .. toctree::
    :maxdepth: 1
 
-   sysinit/index
+   The libkit <libkit/index>
 
-   libkit/index
+   System Bootstrap <sysinit/index>
 
-   dev-tools/index
+   Development Tools <dev-tools/index>
 
-   misc/index
+   Miscellaneous Guides <misc/index>
