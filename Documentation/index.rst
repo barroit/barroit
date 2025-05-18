@@ -13,10 +13,12 @@ Half of the documents are not for you. Undocumented script or file means it's
 tailored for barroit's environment and totally useless for you. To make this
 repo suit your needs, you'll likely have to do a lot of work.
 
-Here's a list of available features of the core:
+Here's a list of available guides and features of the core:
 
 .. toctree::
    :maxdepth: 1
+
+   Terminologies you need to know <misc/terminologies>
 
    The libkit <libkit/index>
 
