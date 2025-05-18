@@ -18,12 +18,12 @@ Here's a list of available guides and features of the core:
 .. toctree::
    :maxdepth: 1
 
-   Terminologies you need to know <misc/terminologies>
+   Core terminologies <misc/terminologies>
 
    The libkit <libkit/index>
 
-   System Bootstrap <sysinit/index>
+   System bootstrap <sysinit/index>
 
-   Development Tools <dev-tools/index>
+   Development tools <dev-tools/index>
 
-   Miscellaneous Guides <misc/index>
+   Miscellaneous guides <misc/index>
