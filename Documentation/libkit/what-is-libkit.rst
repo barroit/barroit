@@ -1,7 +1,7 @@
 .. SPDX-License-Identifier: GPL-3.0-or-later
 
 ===============
-Libkit Overview
+Libkit concepts
 ===============
 
 Libkit is a shell scripting library made to keep things portable, reusable, and

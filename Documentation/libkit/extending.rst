@@ -1,7 +1,7 @@
 .. SPDX-License-Identifier: GPL-3.0-or-later
 
 ==================
-Extending Platform
+Extending platform
 ==================
 
 This part describes documents for extending platforms. To extend a platform,
