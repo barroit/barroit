@@ -1,8 +1,10 @@
 .. SPDX-License-Identifier: GPL-3.0-or-later
 
-==================
-Extending platform
-==================
+.. _extend_libkit:
+
+===============
+Extend Platform
+===============
 
 This part describes documents for extending platforms. To extend a platform,
 implement hooks for it. Here's a list of hooks you should implement:
