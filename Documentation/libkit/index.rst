@@ -5,7 +5,7 @@ Libkit Overview
 ===============
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 1
 
    what-is-libkit
    extending
