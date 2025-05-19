@@ -14,3 +14,7 @@ confused in some sentences.
 2.	your repo, your/repo
 
 		Refer to another repository, often the target repository.
+
+3.	your script, your/script
+
+		Refer to another script, often the target script.
