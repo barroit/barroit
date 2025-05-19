@@ -27,7 +27,7 @@
    "extensions.ignoreRecommendations": true,
    "typescript.validate.enable": false,
    "javascript.validate.enable": false,
-   /* ---------------------------  Srouce Control  ---------------------------- */
+   /* ---------------------------  Source Control  ---------------------------- */
    "scm.showActionButton": false,
    "git.showCommitInput": false,
    "git.openRepositoryInParentFolders": "never",
@@ -308,4 +308,5 @@
    "chat.commandCenter.enabled": false,
    "workbench.startupEditor": "none",
    "workbench.editor.empty.hint": "hidden",
+   "xml.symbols.maxItemsComputed": -1
 }
