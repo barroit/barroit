@@ -1,9 +1,7 @@
-#!/bin/bash
+#!/bin/sh
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-function datadir()
+datadir()
 {
 	printf %s $HOME/.local/share/barroit
 }
-
-mkdir -p $(datadir)

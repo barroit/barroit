@@ -5,6 +5,5 @@ export LIBKIT_ROOT=$(dirname $(readlink -f $0))
 
 source $LIBKIT_ROOT/libkit.sh
 source $LIBKIT_ROOT/libsetup.sh
-source $LIBKIT_ROOT/libsetup-rt.sh
 
 source $1

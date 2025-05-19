@@ -1,12 +1,20 @@
 #!/bin/sh
 # SPDX-License-Identifier: GPL-3.0-or-later
 
+if [ ! $LIBKIT_ROOT ]; then
+	exit 128
+fi
+
 __repo_root=$(dirname $0)/..
 
 export SCRIPT_NAME=$1
 export ASSETS_ROOT=$__repo_root/assets
 export SCRIPT_ROOT=$__repo_root/scripts
 export CONFIG_ROOT=$__repo_root/config
+
+. $LIBKIT_ROOT/libsetup-rt.sh
+
+mkdir -p "$(datadir)"
 
 setup_is_done()
 {
