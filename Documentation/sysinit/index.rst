@@ -8,3 +8,4 @@ System Bootstrap
    :maxdepth: 1
 
    what-is-setup
+   add-platform

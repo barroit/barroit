@@ -8,6 +8,6 @@ Libkit Overview
    :maxdepth: 1
 
    what-is-libkit
-   extending
+   add-platform
    ../dev-tools/use-libkit
    builtins
