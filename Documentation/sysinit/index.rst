@@ -9,3 +9,4 @@ System Bootstrap
 
    what-is-setup
    add-platform
+   use-setup
