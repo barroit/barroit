@@ -4,4 +4,7 @@
 Miscellaneous
 =============
 
-This part describes miscellaneous documents and guides of the core.
+.. toctree::
+   :maxdepth: 1
+
+   mutt-user
