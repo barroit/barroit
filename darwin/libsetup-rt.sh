@@ -1,9 +1,7 @@
-#!/bin/zsh
+#!/bin/sh
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-function datadir()
+datadir()
 {
 	printf %s "$HOME/Library/Application Support/barroit"
 }
-
-mkdir -p "$(datadir)"

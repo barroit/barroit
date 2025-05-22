@@ -16,8 +16,8 @@ mutt/.mailcap		$HOME
 mutt/.muttrc		$HOME
 mutt/.signature		$HOME
 mutt/oauth2.py		$HOME/.mutt
-mutt/xoauth2		$HOME/.mutt
-mutt/pass		$HOME/.mutt
+mutt/auth.oauth2	$HOME/.mutt
+mutt/auth.password	$HOME/.mutt
 
 mutt/@gmail.com			$HOME/.mutt
 mutt/@naver.com			$HOME/.mutt
