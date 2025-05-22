@@ -13,7 +13,8 @@ mutt/.mailcap
 mutt/.muttrc
 mutt/.signature
 mutt/oauth2.py
-mutt/xoauth2
+mutt/auth.oauth2
+mutt/auth.password
 
 mutt/@gmail.com
 mutt/@outlook.com

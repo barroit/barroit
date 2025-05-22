@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-source ~/.mutt/pass
+source ~/.mutt/auth.password
 
 set smtp_url = "smtp://$imap_user@smtp.naver.com:587/"
 

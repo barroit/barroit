@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-source ~/.mutt/xoauth2
+source ~/.mutt/auth.oauth2
 
 set smtp_url = "smtp://$imap_user@smtp-mail.outlook.com:587/"
 
