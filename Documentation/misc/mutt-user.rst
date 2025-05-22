@@ -1,5 +1,7 @@
 .. SPDX-License-Identifier: GPL-3.0-or-later
 
+.. _mutt_user_config:
+
 =======================
 Mutt User Configuration
 =======================
@@ -11,8 +13,8 @@ You must read configs. This document never explains what a config contains, and
 it's not here to hold your hand. It just tells you how to name them and makes
 sure you don't fuck up hierarchy.
 
-This document assumes you map config via ``./<consumer>/setup.sh file-map`` in
-this repo. All configs exist in ``$HOME/.mutt``.
+This document assumes you map config via ``./<consumer>/setup.sh file-map``
+[#sysinit]_ in this repo.
 
 This document abbreviates terms. You must know these:
 
@@ -25,7 +27,8 @@ This document abbreviates terms. You must know these:
 Configuration Hierarchy
 =======================
 
-This setup structures configs into a hierarchy. From root to leaf:
+This setup structures configs into a hierarchy. All configs exist in
+``$HOME/.mutt``, from root to leaf:
 
 ``provider``
 	Defines mailboxes and auth method to use. Filename starts with ``@``.
@@ -122,15 +125,26 @@ Just put your SMTP/IMAP password in ``your_email.secret``.
 OAuth 2.0 Authentication
 ------------------------
 
-You must fill client info. Check out `mutt_oauth2.py docs`_, and configure app
-registration. Once client is set up, run::
+Fill client info with necessary fields. Check out `mutt_oauth2.py docs`_, and
+configure app registration. Also define a valid GnuPG key. Its "Email address"
+must match ``user`` in client.
+
+Once you set up these, run::
 
 	$ cd $HOME/.mutt
 	$ ./oauth2.py --authorize your_email.token
 
-Follow instructions. For 'Preferred OAuth2 flow', mutt_oauth2.py docs author
+Follow instructions. For "Preferred OAuth2 flow", mutt_oauth2.py docs author
 suggests trying all methods it provides. In practice, ``localhostauthcode``
 works well.
 
+Switch Users
+============
+
+:ref:`switch_mutt_users` documents this.
+
 .. _mutt_oauth2.py docs: https://
 	github.com/muttmua/mutt/blob/master/contrib/mutt_oauth2.py.README
+
+.. [#sysinit]
+	See also :ref:`Use setup script <sysinit_setup_usage>`.

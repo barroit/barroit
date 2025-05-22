@@ -1,10 +1,14 @@
 .. SPDX-License-Identifier: GPL-3.0-or-later
 
+.. _sysinit_setup_usage:
+
 =========
 Use Setup
 =========
 
 You must be the root of this repo.
+
+You should read :ref:`sysinit_basic`, but it's not required.
 
 SYNOPSIS
 ========

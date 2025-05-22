@@ -18,8 +18,7 @@
       "**/assets/vim/.vimrc": "plaintext",
       "**/assets/xmodmap/.Xmodmap": "plaintext",
       "**/config/**": "plaintext",
-      "**/docs/**": "plaintext",
-      "**/docs/**/*.rst": "restructuredtext"
+      "**/Documentation/barroit": "plaintext"
    },
    "fileHeaderComment.parameter": {
       "*": {

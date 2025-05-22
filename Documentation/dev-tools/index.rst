@@ -23,6 +23,7 @@ one wants to develop on Windows and eat their piece of shit scripting quirks.
    fix-license
    map-darconf
    mount-wasabi
+   mutt-use
    setup-repo
    sphinx-init
    sync-repo
