@@ -14,7 +14,7 @@ it's not here to hold your hand. It just tells you how to name them and makes
 sure you don't fuck up hierarchy.
 
 This document assumes you map config via ``./<consumer>/setup.sh file-map`` in
-this repo. See :ref:`sysinit_setup_usage` for script usage.
+this repo. See :ref:`sysinit_setup_usage`.
 
 Configuration Hierarchy
 =======================

@@ -11,6 +11,8 @@ workflow to make it work for you.
 
 Your cwd must be the root of your repo.
 
+You must set up hostnames. See :ref:`config_ssh`.
+
 SYNOPSIS
 ========
 
@@ -33,5 +35,3 @@ on B. B must have a branch with same name as the current branch on A. You must
 have some changes on A, or this script panics. It also force resets that branch
 on B to its tracking branch. You should keep branch state clean, or you lose
 commits silently.
-
-.. FIXME: Add 'SEE ALSO' after you write ssh (/etc/hosts) config guide.

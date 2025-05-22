@@ -8,7 +8,7 @@ Use Setup Script
 
 You must be the root of this repo.
 
-You should read :ref:`sysinit_basic`, but it's not required.
+You should read :ref:`sysinit_basic`.
 
 SYNOPSIS
 ========
