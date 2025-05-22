@@ -16,7 +16,7 @@ repo suit your needs, you'll likely have to do a lot of work.
 Here's a list of available guides and features of the core:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    Core terminologies <misc/terminologies>
 

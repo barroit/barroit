@@ -9,5 +9,5 @@ System Bootstrap
 
    what-is-setup
    add-platform
-   use-setup
+   run-setup
    secstor

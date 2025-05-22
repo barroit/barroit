@@ -17,7 +17,7 @@ smartquotes_action = 'q'
 
 extensions = []
 
-primary_domain = 'js'
+primary_domain = 'c'
 highlight_language = 'none'
 
 templates_path = [ 'sphinx/templates' ]

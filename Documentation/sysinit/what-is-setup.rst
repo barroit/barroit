@@ -1,5 +1,7 @@
 .. SPDX-License-Identifier: GPL-3.0-or-later
 
+.. _sysinit_basic:
+
 ==================
 The Setup Concepts
 ==================

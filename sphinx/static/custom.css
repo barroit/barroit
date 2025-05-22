@@ -20,6 +20,14 @@ div.bodywrapper {
 	margin-left: 17rem;
 }
 
+@media screen and (max-width: 65em) {
+
+div.bodywrapper {
+	margin: 0;
+}
+
+} /* @media screen and (max-width: 65em) */
+
 div.document {
 	width: auto;
 }
