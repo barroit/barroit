@@ -13,16 +13,8 @@ You must read configs. This document never explains what a config contains, and
 it's not here to hold your hand. It just tells you how to name them and makes
 sure you don't fuck up hierarchy.
 
-This document assumes you map config via ``./<consumer>/setup.sh file-map``
-[#sysinit]_ in this repo.
-
-This document abbreviates terms. You must know these:
-
-``this setup``
-	Refers to barroit's config setup.
-
-``your email``, ``your_email``
-	Refers to email address of target user.
+This document assumes you map config via ``./<consumer>/setup.sh file-map`` in
+this repo. See :ref:`sysinit_setup_usage` for script usage.
 
 Configuration Hierarchy
 =======================
@@ -145,6 +137,3 @@ Switch Users
 
 .. _mutt_oauth2.py docs: https://
 	github.com/muttmua/mutt/blob/master/contrib/mutt_oauth2.py.README
-
-.. [#sysinit]
-	See also :ref:`Use setup script <sysinit_setup_usage>`.

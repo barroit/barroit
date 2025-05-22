@@ -2,9 +2,9 @@
 
 .. _sysinit_setup_usage:
 
-=========
-Use Setup
-=========
+================
+Use Setup Script
+================
 
 You must be the root of this repo.
 

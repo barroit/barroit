@@ -18,3 +18,9 @@ confused in some sentences.
 ``your script``, ``your/script``
 
 	Refers to another script, often the target script.
+
+``this setup``
+	Refers to barroit's setup.
+
+``your email``, ``your_email``
+	Refers to email address of the target user.

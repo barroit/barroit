@@ -7,4 +7,5 @@ Miscellaneous
 .. toctree::
    :maxdepth: 1
 
+   config-ssh
    mutt-user
