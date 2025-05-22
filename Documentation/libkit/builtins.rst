@@ -1,7 +1,7 @@
 .. SPDX-License-Identifier: GPL-3.0-or-later
 
 =================
-Builtin functions
+Builtin Functions
 =================
 
 This document describes builtins of libkit. It has multiple part of

@@ -9,7 +9,7 @@ Extend Platform
 This part describes documents for extending platforms. To extend a platform,
 implement hooks for it. Here's a list of hooks you should implement:
 
-   - current()
+``current``
 
 	This function prints a timestamp used for measuring time. A reliable
 	source is system uptime. It's better to make the format look like
@@ -21,13 +21,14 @@ implement hooks for it. Here's a list of hooks you should implement:
 If you don't implement these hooks, you can't use the following builtins:
 
 .. list-table::
+   :align: left
    :header-rows: 1
    :widths: 25 25
 
    * - builtin
      - relies on
-   * - log()
-     - current()
+   * - log
+     - current
 
 You can place hooks anywhere. Just make sure builtins can see those hooks
 before calling them.
