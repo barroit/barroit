@@ -17,16 +17,22 @@ mutt/auth.oauth2
 mutt/auth.password
 
 mutt/@gmail.com
+mutt/@naver.com
 mutt/@outlook.com
 mutt/@sunjiamu@outlook.com
 
 mutt/barroit@linux.com
-mutt/barroit39@gmail.com
-mutt/j25232sj@edu.tuis.ac.jp
 mutt/sunjiamu@outlook.com
-mutt/client.barroit39@gmail.com
-mutt/client.j25232sj@edu.tuis.ac.jp
 mutt/client.sunjiamu@outlook.com
+
+mutt/barroit39@gmail.com
+mutt/client.barroit39@gmail.com
+
+mutt/barroit@naver.com
+mutt/client.barroit@naver.com
+
+mutt/j25232sj@edu.tuis.ac.jp
+mutt/client.j25232sj@edu.tuis.ac.jp
 
 ssh/config
 
