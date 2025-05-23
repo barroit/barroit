@@ -1,8 +1,8 @@
 .. SPDX-License-Identifier: GPL-3.0-or-later
 
-=========
-Sync Repo
-=========
+========
+Move WIP
+========
 
 Symlinking this file is okay.
 
@@ -18,7 +18,7 @@ SYNOPSIS
 
 ::
 
-	sync-repo.sh
+	move-wip.sh
 
 DESCRIPTION
 ===========

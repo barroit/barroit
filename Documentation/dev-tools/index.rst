@@ -26,7 +26,7 @@ one wants to develop on Windows and eat their piece of shit scripting quirks.
    mutt-use
    setup-repo
    sphinx-init
-   sync-repo
+   move-wip
    umount-wasabi
    use-libkit
    vmksign
