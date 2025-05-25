@@ -21,7 +21,9 @@ one wants to develop on Windows and eat their piece of shit scripting quirks.
 
    bump-version
    fix-license
+   group-history
    map-darconf
+   merge-upstream
    mount-wasabi
    mutt-use
    setup-repo
