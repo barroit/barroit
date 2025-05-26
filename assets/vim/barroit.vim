@@ -1,82 +1,159 @@
-" global
-hi LineNr		ctermfg=Gray
+" SPDX-License-Identifier: GPL-3.0-or-later
 
-" vim
-hi vimHighlight		ctermfg=38
-hi vimGroup		ctermfg=253
-hi vimHiGroup		ctermfg=253
-hi vimHiCtermFgBg	ctermfg=Gray
-hi vimHiNmbr		ctermfg=151
-hi vimLineComment	ctermfg=Gray
+hi bashStatement      ctermfg=250
+hi cAnsiFunction      ctermfg=250
+hi cAnsiName          ctermfg=250
+hi cCharacter         ctermfg=173
+hi cComment           ctermfg=250
+hi cCommentL          ctermfg=250
+hi cConditional       ctermfg=75
+hi cConstant          ctermfg=250
+hi cCppString         ctermfg=173
+hi cCustomFunc        ctermfg=250
+hi cFormat            ctermfg=173
+hi cInclude           ctermfg=250
+hi cIncluded          ctermfg=173
+hi cLabel             ctermfg=75
+hi cmakeCommand       ctermfg=75
+hi cmakeCommandRepeat ctermfg=75
+hi cmakeComment       ctermfg=250
+hi cmakeEnvironment   ctermfg=250
+hi cmakeEscaped       ctermfg=250
+hi cmakeKWfile        ctermfg=250
+hi cmakeKWfile        ctermfg=250
+hi cmakeKWif          ctermfg=75
+hi cmakeKWinstall     ctermfg=250
+hi cmakeKWlist        ctermfg=250
+hi cmakeKWproject     ctermfg=250
+hi cmakeKWset         ctermfg=75
+hi cmakeKWstring      ctermfg=250
+hi cmakeProperty      ctermfg=250
+hi cmakeVariable      ctermfg=250
+hi cmakeVariableValue ctermfg=250
+hi cNumber            ctermfg=151
+hi confComment        ctermfg=250
+hi confString         ctermfg=173
+hi cOperator          ctermfg=75
+hi cppModifier        ctermfg=75
+hi cppNumber          ctermfg=151
+hi cppStatement       ctermfg=75
+hi cppSTLconstant     ctermfg=250
+hi cppSTLfunction     ctermfg=250
+hi cppSTLios          ctermfg=250
+hi cppSTLnamespace    ctermfg=250
+hi cppSTLtype         ctermfg=75
+hi cppString          ctermfg=173
+hi cppStructure       ctermfg=75
+hi cppType            ctermfg=75
+hi cRepeat            ctermfg=75
+hi cSpecialCharacter  ctermfg=173
+hi cSpecial           ctermfg=173
+hi cStatement         ctermfg=75
+hi cStorageClass      ctermfg=75
+hi cString            ctermfg=173
+hi cStructure         ctermfg=75
+hi cType              ctermfg=75
+hi cTypedef           ctermfg=75
+hi cUserLabel         ctermfg=250
+hi Delimiter          ctermfg=250
+hi LineNr             ctermfg=250
+hi makeCommands       ctermfg=250
+hi makeComment        ctermfg=250
+hi makeDString        ctermfg=173
+hi makeExport         ctermfg=75
+hi makeIdent          ctermfg=250
+hi makeNextLine       ctermfg=250
+hi makePreCondit      ctermfg=75
+hi makeSpecial        ctermfg=75
+hi makeSpecTarget     ctermfg=173
+hi makeStatement      ctermfg=250
+hi makeTarget         ctermfg=173
+hi Normal             ctermfg=250 ctermbg=233
+hi PreProc            ctermfg=250
+hi pythonBuiltin      ctermfg=250
+hi pythonComment      ctermfg=250
+hi pythonConditional  ctermfg=75
+hi pythonFunction     ctermfg=250
+hi pythonInclude      ctermfg=75
+hi pythonNumber       ctermfg=151
+hi pythonOperator     ctermfg=75
+hi pythonQuotes       ctermfg=173
+hi pythonRepeat       ctermfg=75
+hi pythonStatement    ctermfg=75
+hi pythonString       ctermfg=173
+hi rstComment         ctermfg=250
+hi rstExplicitMarkup  ctermfg=250
+hi rstInlineLiteral   ctermfg=173
+hi rstSections        ctermfg=75
+hi shAstQuote         ctermfg=250
+hi shCmdSubRegion     ctermfg=250
+hi shCommandSub       ctermfg=250
+hi shComment          ctermfg=250
+hi shConditional      ctermfg=75
+hi shCtrlSeq          ctermfg=250
+hi shDeref            ctermfg=250
+hi shDerefSimple      ctermfg=250
+hi shDerefVar         ctermfg=250
+hi shDoubleQuote      ctermfg=173
+hi shEcho             ctermfg=250
+hi shEscape           ctermfg=250
+hi shFor              ctermfg=250
+hi shHereDoc          ctermfg=173
+hi shLoop             ctermfg=75
+hi shNoQuote          ctermfg=250
+hi shNumber           ctermfg=151
+hi shOperator         ctermfg=250
+hi shQuote            ctermfg=173
+hi shRange            ctermfg=250
+hi shSet              ctermfg=250
+hi shSetList          ctermfg=250
+hi shSingleQuote      ctermfg=173
+hi shSnglCase         ctermfg=250
+hi shSpecial          ctermfg=250
+hi shSpecialDQ        ctermfg=250
+hi shStatement        ctermfg=250
+hi shTestOpr          ctermfg=250
+hi shTestPattern      ctermfg=250
+hi shVariable         ctermfg=250
+hi vimCall            ctermfg=75
+hi vimCommand         ctermfg=75
+hi vimFuncName        ctermfg=250
+hi vimFuncScope       ctermfg=250
+hi vimGroup           ctermfg=250
+hi vimHiCtermFgBg     ctermfg=250
+hi vimHighlight       ctermfg=75
+hi vimHiGroup         ctermfg=250
+hi vimHiNmbr          ctermfg=151
+hi vimLineComment     ctermfg=250
+hi vimMapLeaderKey    ctermfg=250
+hi vimNumber          ctermfg=151
+hi vimOper            ctermfg=250
+hi vimString          ctermfg=173
+hi vimUsrCmd          ctermfg=75
 
-" sh
-hi shComment		ctermfg=Gray
-hi shNumber		ctermfg=151
-hi shVariable		ctermfg=253
-hi shDerefSimple	ctermfg=253
-hi shDerefVar		ctermfg=253
-hi shFor		ctermfg=253
-hi shQuote		ctermfg=173
-hi shSingleQuote	ctermfg=173
-hi shDoubleQuote	ctermfg=173
-hi shAstQuote		ctermfg=253
-hi shNoQuote		ctermfg=253
-hi shRange		ctermfg=253
-hi shCmdSubRegion	ctermfg=253
-hi shConditional	ctermfg=38
-hi shSnglCase		ctermfg=253
-hi shOperator		ctermfg=253
-hi shStatement		ctermfg=253
-hi shCommandSub		ctermfg=253
-hi shSpecial		ctermfg=Yellow
-hi shSpecialDQ		ctermfg=Yellow
-hi shCtrlSeq		ctermfg=Yellow
-hi shEscape		ctermfg=Yellow
-hi Delimiter		ctermfg=253
-hi PreProc		ctermfg=253
-hi shEcho		ctermfg=Gray
-hi shSetList		ctermfg=253
-hi shSet		ctermfg=253
-hi shTestOpr		ctermfg=253
-hi shLoop		ctermfg=38
+" dumbass name
+hi cmakeCommandConditional                 ctermfg=75
+hi cmakeCommandDeprecated                  ctermfg=75
+hi cmakeKWadd_custom_target                ctermfg=250
+hi cmakeKWcmake_path                       ctermfg=75
+hi cmakeKWinstall_programs                 ctermfg=250
+hi cmakeKWload_cache                       ctermfg=250
+hi cmakeKWset_source_files_properties      ctermfg=250
+hi cmakeKWtarget_compile_options           ctermfg=250
+hi cmakeKWtarget_link_libraries            ctermfg=250
+hi cmakeKWtarget_sources                   ctermfg=250
+hi cmakeKWtry_compile                      ctermfg=75
+hi cmakeKWwrite_basic_package_version_file ctermfg=250
+hi cmakeKWwrite_file                       ctermfg=250
+hi rstInterpretedTextOrHyperlinkReference  ctermfg=75
 
-" bash
-hi bashStatement	ctermfg=253
+autocmd BufRead,BufNewFile Kconfig* setlocal syntax=off
 
-" c
-hi cCommentL		ctermfg=Gray
-hi cInclude		ctermfg=Gray
-hi cIncluded		ctermfg=173
-hi cType		ctermfg=38
-hi cStatement		ctermfg=38
-hi cConditional		ctermfg=38
-hi cRepeat		ctermfg=38
-hi cSpecial		ctermfg=Yellow
-hi cCppString		ctermfg=173
-hi cFormat		ctermfg=173
-hi cString		ctermfg=173
-hi cTypedef		ctermfg=38
-hi cStructure		ctermfg=38
-hi cCustomFunc		ctermfg=180
-hi cAnsiFunction	ctermfg=180
-hi cStorageClass	ctermfg=38
-hi cNumber		ctermfg=151
+" Plugin manager vim-plug breaks styles, these fix that.
+autocmd filetype python setlocal tabstop=8 shiftwidth=8
+autocmd FileType rst    setlocal noexpandtab indentexpr=
 
-" cpp
-hi cppSTLfunction	ctermfg=180
-hi cppSTLnamespace	ctermfg=253
-hi cppSTLconstant	ctermfg=253
-hi cppSTLios		ctermfg=253
-hi cppString		ctermfg=173
-hi cppStatement		ctermfg=38
-hi cppStructure		ctermfg=38
-hi cppType		ctermfg=38
-hi cppSTLtype		ctermfg=38
-
-" make
-hi makeIdent		ctermfg=253
-hi makeTarget		ctermfg=173
-hi makeCommands		ctermfg=253
-
-" cmake
-hi cmakeComment		ctermfg=Gray
+function! s:fix_color(timer)
+	execute 'hi PreProc ctermfg=250'
+endfunction
+autocmd VimEnter * call timer_start(39, function('s:fix_color'))
