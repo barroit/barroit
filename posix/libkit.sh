@@ -84,6 +84,16 @@ confirm()
 	esac
 }
 
+readlower()
+{
+	tr [:upper:] [:lower:]
+}
+
+readupper()
+{
+	tr [:lower:] [:upper:]
+}
+
 v1()
 {
 	grep $2 $1 | awk -F'\t+' '{print $2}'
