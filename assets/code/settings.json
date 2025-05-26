@@ -94,7 +94,7 @@
          " */"
       ],
       "python": [
-         "#!/bin/python3",
+         "#!/usr/bin/python3",
          "# SPDX-License-Identifier: ${license}"
       ],
       "sh": [
@@ -207,10 +207,12 @@
             "scope": [
                "comment",
                "constant.character.escape",
+               "constant.character.set.regexp",
                "constant.language",
                "constant.other.character-class.regexp",
                "constant.other.color.rgb-value.hex.css",
                "constant.other.php",
+               "constant.other.set.regexp",
                "entity.name.function",
                "entity.name.function.preprocessor",
                "entity.name.label",
@@ -308,5 +310,6 @@
    "chat.commandCenter.enabled": false,
    "workbench.startupEditor": "none",
    "workbench.editor.empty.hint": "hidden",
-   "xml.symbols.maxItemsComputed": -1
+   "xml.symbols.maxItemsComputed": -1,
+   "editor.unicodeHighlight.ambiguousCharacters": false
 }
