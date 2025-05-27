@@ -185,7 +185,7 @@ for bundle in history:
 		else:
 			print(f": {group}:")
 
-		for i in range(1, variant_size):
+		for i in range(variant_size - 1, 0, -1):
 			print(f"  - {variant[i]}")
 
 		print()
