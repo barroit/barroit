@@ -29,16 +29,14 @@ set -e
 cd \$HOME/${PWD#$HOME/}
 export PATH=\$HOME/.local/bin:\$PATH
 
-if git remote | grep -q move-wip; then
-	git remote set-url move-wip $remote_url
-else
-	git remote add move-wip $remote_url
-fi
+git remote add move-wip $remote_url
 
 git fetch move-wip $branch
 git switch -C $branch
 git reset --hard move-wip/$branch
 
 git am -
+
 git reset HEAD^
+git remote remove move-wip
 "
