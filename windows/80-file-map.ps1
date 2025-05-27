@@ -33,4 +33,4 @@ foreach ($line in (read-line $PSScriptRoot\..\config\file-map-windows)) {
 	log ("$CYAN{0,-25}$RESET -> $GREEN$dst$RESET" -f $path)
 }
 
-log "Linking configuration files ... OK"
+log 'Linking configuration files ... OK'

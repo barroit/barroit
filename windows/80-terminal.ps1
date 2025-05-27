@@ -13,7 +13,7 @@ $barroit = $profiles | Where-Object { $_.name -eq 'Barroit' }
 $pwsh = $profiles | Where-Object { $_.name -eq 'Barroit' }
 
 if ($barroit) {
-	log "Importing Windows Terminal settings ... Skipped"
+	log 'Importing Windows Terminal settings ... Skipped'
 	exit
 }
 
@@ -80,4 +80,4 @@ $conf['profiles']['list'] += @{
 
 $conf | ConvertTo-Json -Depth 39 | Set-Content $conf_path
 
-log "Importing Windows Terminal settings ... OK"
+log 'Importing Windows Terminal settings ... OK'
