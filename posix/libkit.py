@@ -9,6 +9,7 @@ from os import chdir,		\
 	       getcwd as pwd,	\
 	       getpid,		\
 	       mkdir,		\
+	       path,		\
 	       unlink
 
 from subprocess import run as execl,	\
@@ -18,6 +19,13 @@ from sys import argv,		\
 		exit,		\
 		stdout,		\
 		stderr
+
+realpath = path.abspath
+basename = path.basename
+dirname = path.dirname
+isfile = path.isfile
+isdir = path.isdir
+islink = path.islink
 
 argc = len(argv)
 
