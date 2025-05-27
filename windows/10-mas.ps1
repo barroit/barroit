@@ -11,7 +11,7 @@ function is_activated
 }
 
 if (is_activated) {
-	log "Activating Windows ... Skipped"
+	log 'Activating Windows ... Skipped'
 	exit
 }
 
@@ -27,4 +27,4 @@ if (-not (is_activated)) {
 	die 'Windows activation failed'
 }
 
-log "Activating Windows ... OK"
+log 'Activating Windows ... OK'

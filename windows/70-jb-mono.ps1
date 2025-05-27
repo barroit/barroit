@@ -3,7 +3,7 @@
 $dst = "$Env:LOCALAPPDATA\Microsoft\Windows\Fonts"
 
 if ((Get-ChildItem -Filter JetBrainsMono-* $dst).Count) {
-	log "Installing JetBrains Mono ... Skipped"
+	log 'Installing JetBrains Mono ... Skipped'
 	exit
 }
 
@@ -59,6 +59,6 @@ foreach ($font in $src) {
 			 $key >nul
 }
 
-log "Installing JetBrains Mono ... OK"
+log 'Installing JetBrains Mono ... OK'
 
 Remove-Item -Recurse -Force $tmp
