@@ -10,20 +10,24 @@ if [ ! -f NAME ]; then
 	die 'missing NAME file'
 fi
 
-if [ ! -f VERSION ]; then
-	die 'missing VERSION file'
+if [ -f VERSION ]; then
+	versrc=VERSION
+elif [ -n "$1" ]; then
+	versrc=$1
+else
+	die 'missing version source'
 fi
 
-if [ ! "$(git diff VERSION)" ] &&
-   [ ! "$(git diff --staged VERSION)" ] &&
-   [ $(git ls-files VERSION) ]; then
-	die 'no changes in VERSION'
+if [ ! "$(git diff $versrc)" ] &&
+   [ ! "$(git diff --staged $versrc)" ] &&
+   [ $(git ls-files $versrc) ]; then
+	die "no changes in $versrc"
 fi
 
-git add VERSION
+git add $versrc
 
 name=$(cat NAME)
-version=$(cat VERSION)
+version=$(cat $versrc)
 
 git commit -m "$name $version"
 
