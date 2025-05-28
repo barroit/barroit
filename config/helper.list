@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+bump-version.sh
+
+fix-license.sh
+
+merge-upstream.sh
+
+move-wip.sh
+
+mutt-use.sh
