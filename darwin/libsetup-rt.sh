@@ -5,3 +5,8 @@ datadir()
 {
 	printf %s "$HOME/Library/Application Support/barroit"
 }
+
+userbin()
+{
+	printf %s "$HOME/.local/bin"
+}

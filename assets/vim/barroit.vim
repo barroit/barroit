@@ -98,6 +98,7 @@ hi shDoubleQuote      ctermfg=173
 hi shEcho             ctermfg=250
 hi shEscape           ctermfg=250
 hi shFor              ctermfg=250
+hi shFunction         ctermfg=250
 hi shHereDoc          ctermfg=173
 hi shLoop             ctermfg=75
 hi shNoQuote          ctermfg=250

@@ -5,3 +5,8 @@ datadir()
 {
 	printf %s $HOME/.local/share/barroit
 }
+
+userbin()
+{
+	printf %s $HOME/.local/bin
+}
