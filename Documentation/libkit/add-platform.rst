@@ -33,6 +33,5 @@ If you don't implement these hooks, you can't use the following builtins:
 You can place hooks anywhere. Just make sure builtins can see those hooks
 before calling them.
 
-In practice, I place hook implementations in ``linux/libkit.sh`` and source
-``posix/libkit.sh``. This setup works on every Linux-based distribution. Same
-approach also works on macOS.
+In practice, people place hook implementations in ``linux/libkit.sh`` and
+source ``posix/libkit.sh``. This setup works on every Unix-like OS.

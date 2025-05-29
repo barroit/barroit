@@ -4,10 +4,9 @@
 Builtin Functions
 =================
 
-This document describes builtins of libkit. It has multiple part of
-functionality. If you're using this and don't read the code, you're doing it
-wrong. I won't explain what builtins do in a detailed way. I'm not your
-babysitter.
+This document describes builtins of libkit. If you prefer Microsoft's
+babysitter-style docs and don't read the code, do not touch this part. It's for
+experienced developers, not dumbasses.
 
 Standard output builtins
 ========================
@@ -36,7 +35,7 @@ Don't use ``confirm`` like::
 	while read; do
 		# ...
 		confirm xxx
-	done < file
+	done <file
 
 This input redirection prevents ``getchar`` from reading user input and fucks
 up ``confirm``.
