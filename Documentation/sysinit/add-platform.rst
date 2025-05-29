@@ -12,16 +12,15 @@ This document only describes barroit's practice, which splits provider and
 consumer into two directories. But again, this framework is flexible. You're
 free to place them in one or multiple directories.
 
-You must read the code. I won't duplicate implementation details or explain how
-they're implemented here. I'll just tell you what scripts do and where to place
+You must read the code. This document doesn't repeat implementation details or
+explain how they're done. It only tells you what scripts do and where to put
 them.
 
 Add provider
 ============
 
-Name this provider. I use the parent name of OS families for providers. For
-Linux-based distributions, I use ``linux``. For macOS, ``darwin``. And probably
-``bsd`` for FreeBSD.
+You must give this provider a nice name. Common choice is OS family name, like
+``linux``, ``bsd``, or ``darwin``.
 
 A provider must contain these scripts:
 
@@ -45,8 +44,8 @@ See :ref:`Extend Platform for libkit<extend_libkit>` for how to extend libkit.
 Add consumer
 ============
 
-Name this consumer. I use OS names, like ``ubuntu``, ``macos``, or probably
-``freebsd``.
+You must give this consumer a nice name. Common choice is OS name, like
+``ubuntu``, ``freebsd``, or ``macos``.
 
 A consumer must contain these scripts:
 
