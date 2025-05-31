@@ -10,10 +10,10 @@ if [ ! -f NAME ]; then
 	die 'missing NAME file'
 fi
 
-if [ -f VERSION ]; then
-	versrc=VERSION
-elif [ -n "$1" ]; then
+if [ -n "$1" ]; then
 	versrc=$1
+elif [ -f VERSION ]; then
+	versrc=VERSION
 else
 	die 'missing version source'
 fi
