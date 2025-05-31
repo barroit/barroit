@@ -1,0 +1,21 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+You need to help me check commit titles. You must ensure title style is
+kernel-y. If it is, tell me it's fine. Otherwise, amend it and reply in the
+following form:
+
+INITIAL
+```
+old title here
+```
+
+AMEND
+```
+new title here
+```
+
+You must explain where and why you made such changes.
+You must keep tags (text before last colon), don't check them.
+You must not capitalize first word after tag.
+You must avoid words like 'script', 'file', and 'binary' after filenames.
+You must not touch filenames.

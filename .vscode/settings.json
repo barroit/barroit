@@ -1,6 +1,6 @@
 {
    "files.associations": {
-      "**/assets/chatgpt/commit": "plaintext",
+      "**/assets/chatgpt/**": "plaintext",
       "**/assets/fastfetch/dotmiku": "plaintext",
       "**/assets/gdb/gdbinit": "plaintext",
       "**/assets/git/.gitconfig": "plaintext",
