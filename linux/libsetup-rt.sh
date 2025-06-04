@@ -3,10 +3,10 @@
 
 datadir()
 {
-	printf %s $HOME/.local/share/barroit
+	printf '%s\n' $HOME/.local/share/barroit
 }
 
 userbin()
 {
-	printf %s $HOME/.local/bin
+	printf '%s\n' $HOME/.local/bin
 }
