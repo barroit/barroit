@@ -8,5 +8,10 @@ datadir()
 
 userbin()
 {
-	printf '%s\n' "$HOME/.local/bin"
+	printf '%s\n' $HOME/.local/bin
+}
+
+secstor()
+{
+	printf '%s\n' /Volumes/secret
 }

@@ -10,3 +10,8 @@ userbin()
 {
 	printf '%s\n' $HOME/.local/bin
 }
+
+secstor()
+{
+	printf '%s\n' /media/$(whoami)/secret
+}
