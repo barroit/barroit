@@ -34,3 +34,9 @@ exec_is_force()
 {
 	test $SCRIPT_NAME = "$FORCE_EXEC"
 }
+
+# Only use this in consumer scripts.
+os_name()
+{
+	basename $(dirname $1)
+}
