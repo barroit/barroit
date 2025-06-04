@@ -17,7 +17,7 @@ while read line; do
 	fi
 
 	pipx install $line
-done < $CONFIG_ROOT/pipx-packages
+done < $CONFIG_ROOT/pip.list
 
 setup_done
 log 'Installing pipx packages ... OK'

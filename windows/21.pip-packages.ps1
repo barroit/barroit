@@ -5,7 +5,7 @@ if (-not (sr_is_force $args) -and (sr_is_done (script_name))) {
 	exit
 }
 
-$lines = read-line $PSScriptRoot\..\config\winpip-packages
+$lines = read-line $PSScriptRoot\..\config\pip.list.win
 
 foreach ($line in $lines) {
 	if (-not $line -or $line -match '^#') {
