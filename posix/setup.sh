@@ -3,7 +3,7 @@
 
 absname()
 {
-	printf %s $(perl -e 'use Cwd "abs_path"; print abs_path(shift)' $1)
+	printf '%s\n' $(perl -e 'use Cwd "abs_path"; print abs_path(shift)' $1)
 }
 
 script_root=$(absname $(dirname $0))
