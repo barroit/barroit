@@ -6,7 +6,7 @@ if ! exec_is_force && setup_is_done || virt; then
 	exit
 fi
 
-url=$(cat $CONFIG_ROOT/jb-mono-url)
+url=$(v1 $CONFIG_ROOT/urlmap font)
 zip=$(basename $url)
 
 tmp=$(mktemp -d)

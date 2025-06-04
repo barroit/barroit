@@ -1,20 +1,19 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-$url = Get-Content $PSScriptRoot\..\config\vim-plug-url
-$dir = '~\vimfiles\autoload'
+$dst_dir = "$HOME\vimfiles\autoload"
+$dst = "$dst_dir\plug.vim"
 
-if (-not (Test-Path $dir)) {
-	New-Item -ItemType Directory $dir >NUL
-}
-
-$dir = Resolve-Path $dir
-$path = "$dir\plug.vim"
-
-if ((Test-Path $path) -and -not (sr_is_force $args)) {
+if ((Test-Path $dst) -and -not (sr_is_force $args)) {
 	log 'Installing vim plug ... Skipped'
 	exit
 }
 
-curl -o $path $url
+if (-not (Test-Path $dst_dir)) {
+	New-Item -ItemType Directory $dst_dir >NUL
+}
+
+$url = v1 $PSScriptRoot\..\config\urlmap vimplug
+
+curl -o $dst $url
 
 log 'Installing vim plug ... OK'

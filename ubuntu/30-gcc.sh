@@ -14,7 +14,7 @@ if virt; then
 	exit
 fi
 
-url=$(cat $CONFIG_ROOT/gcc-url)
+url=$(v1 $CONFIG_ROOT/urlmap gcc)
 
 mkdir -p ~/git
 cd ~/git

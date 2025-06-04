@@ -186,3 +186,31 @@ function run-admin
 
 	Start-Process -Verb RunAs -Wait pwsh '-Command', $cmd
 }
+
+function v1
+{
+	Select-String $args[1] $args[0] | ForEach-Object {
+		($_ -split '\t+')[1]
+	}
+}
+
+function v2
+{
+	Select-String $args[1] $args[0] | ForEach-Object {
+		($_ -split '\t+')[2]
+	}
+}
+
+function v3
+{
+	Select-String $args[1] $args[0] | ForEach-Object {
+		($_ -split '\t+')[3]
+	}
+}
+
+function v4
+{
+	Select-String $args[1] $args[0] | ForEach-Object {
+		($_ -split '\t+')[4]
+	}
+}

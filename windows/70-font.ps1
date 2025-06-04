@@ -7,7 +7,7 @@ if ((Get-ChildItem -Filter JetBrainsMono-* $dst).Count) {
 	exit
 }
 
-$url = Get-Content $PSScriptRoot\..\config\jb-mono-url
+$url = v1 $PSScriptRoot\..\config\urlmap gcc
 $tmp = ".tmp-$PID"
 $zip = "$tmp/$(Split-Path $url -Leaf)"
 
@@ -16,7 +16,7 @@ New-Item -ItemType directory $tmp >nul
 curl -L -o $zip $url
 if (-not $?) {
 	Remove-Item -Recurse -Force $tmp
-	die "JetBrains Mono download url ``$url' is outdated"
+	die "deprecated url '$url'"
 }
 
 Expand-Archive $zip $tmp
