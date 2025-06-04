@@ -1,5 +1,5 @@
 call plug#begin('~/.vim/plugged')
-	Plug 'octol/vim-cpp-enhanced-highlight'
+Plug 'octol/vim-cpp-enhanced-highlight'
 call plug#end()
 
 if !isdirectory(expand('~/.vim/swap'))
@@ -17,9 +17,4 @@ set backspace=indent,eol,start
 set ruler
 
 colorscheme barroit
-
-function! s:inspect_token()
-	echo synIDattr(synID(line('.'), col('.'), 1), 'name')
-endfunction
-nnoremap <leader>it :call <SID>inspect_token()<CR>
 
