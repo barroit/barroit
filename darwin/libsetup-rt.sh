@@ -3,10 +3,10 @@
 
 datadir()
 {
-	printf %s "$HOME/Library/Application Support/barroit"
+	printf '%s\n' "$HOME/Library/Application Support/barroit"
 }
 
 userbin()
 {
-	printf %s "$HOME/.local/bin"
+	printf '%s\n' "$HOME/.local/bin"
 }
