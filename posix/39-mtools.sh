@@ -12,7 +12,8 @@ while read line; do
 	fi
 
 	ln -sf $SCRIPT_ROOT/$line $(userbin)/$line
-done <$CONFIG_ROOT/helper.list
+
+done <$CONFIG_ROOT/mtools.list
 
 setup_done
 log 'Installing helper scripts ... OK'
