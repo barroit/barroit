@@ -1,9 +1,9 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 # NO MORE SYMLINKS ON WINDOWS. THE DEFAULT FILE SYSTEM FUCKED ME UP :(
 
-$config = read-pair $PSScriptRoot\..\config\file-map
+$config = read-pair $PSScriptRoot\..\config\filemap
 
-foreach ($line in (read-line $PSScriptRoot\..\config\file-map-windows)) {
+foreach ($line in (read-line $PSScriptRoot\..\config\filemap-windows)) {
 	$col = $line -split '\t'
 	$path = $col[0]
 
@@ -33,4 +33,4 @@ foreach ($line in (read-line $PSScriptRoot\..\config\file-map-windows)) {
 	log ("$CYAN{0,-25}$RESET -> $GREEN$dst$RESET" -f $path)
 }
 
-log 'Linking configuration files ... OK'
+log 'Mapping files ... OK'
