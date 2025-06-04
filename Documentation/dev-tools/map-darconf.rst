@@ -20,7 +20,7 @@ DESCRIPTION
 
 This script adds a worktree at ``../barroit-macos`` and makes symlinks from
 that worktree to destination files. It greps destinations from
-``config/file-map-macos``. The list of symlink sources is hardcoded. Currently,
+``config/filemap-macos``. The list of symlink sources is hardcoded. Currently,
 that list includes:
 
    - code/settings.json
