@@ -9,7 +9,7 @@ if (likely-vm) {
 	$is_dev = 1
 }
 
-$lines = read-line $PSScriptRoot\..\config\winget-packages
+$lines = read-line $PSScriptRoot\..\config\winget.list
 
 foreach ($line in $lines) {
 	$skip = 0
