@@ -15,3 +15,8 @@ secstor()
 {
 	printf '%s\n' /Volumes/secret
 }
+
+shrc()
+{
+	printf '%s\n' $HOME/.zshrc
+}

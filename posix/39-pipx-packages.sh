@@ -12,11 +12,12 @@ if ! which pipx >/dev/null; then
 fi
 
 while read line; do
-	if line_need_skip "$line"; then
+	if skip_line "$line"; then
 		continue
 	fi
 
 	pipx install $line
+
 done < $CONFIG_ROOT/pip.list
 
 setup_done

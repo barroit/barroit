@@ -3,6 +3,7 @@ am		git am
 amend		git commit --amend
 apply		git apply
 branch		git branch
+cherry-pick	git cherry-pick
 commit		git commit
 format-patch	git format-patch
 merge		git merge
@@ -11,12 +12,14 @@ pull		git pull
 push		git push
 rebase		git rebase
 reflog		git reflog
+remote		git remote
 show		git show
+show-branch	git show-branch
+show-ref	git show-ref
 stash		git stash
 status		git status
 switch		git switch
 
 m		make
-g		gdb
 
 use-idf		. $HOME/git/esp-idf/export.sh

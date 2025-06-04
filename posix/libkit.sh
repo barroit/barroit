@@ -84,12 +84,12 @@ confirm()
 	esac
 }
 
-readlower()
+read_lower()
 {
 	tr [:upper:] [:lower:]
 }
 
-readupper()
+read_upper()
 {
 	tr [:lower:] [:upper:]
 }
@@ -135,7 +135,7 @@ r4()
 	printf %s "$1" | awk -F'\t+' '{print $4}'
 }
 
-line_need_skip()
+skip_line()
 {
 	case "$1" in
 	'' | \#*)

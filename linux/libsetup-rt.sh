@@ -15,3 +15,8 @@ secstor()
 {
 	printf '%s\n' /media/$(whoami)/secret
 }
+
+shrc()
+{
+	printf '%s\n' $HOME/.bashrc
+}

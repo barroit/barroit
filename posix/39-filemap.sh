@@ -9,7 +9,7 @@ if ! exec_is_force && setup_is_done; then
 fi
 
 while read line; do
-	if line_need_skip "$line"; then
+	if skip_line "$line"; then
 		continue
 	fi
 
