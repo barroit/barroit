@@ -7,7 +7,7 @@ Configure SSH
 =============
 
 This document guides you in configuring ssh with barroit's setup. It assumes
-you executed ``./<consumer>/setup.sh file-map``. See :ref:`sysinit_setup_usage`
+you executed ``./<consumer>/setup.sh filemap``. See :ref:`sysinit_setup_usage`
 for script usage.
 
 In this document, when talking about hosts in ssh config, it only refers to
