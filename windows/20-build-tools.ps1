@@ -1,6 +1,8 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-if (-not (sr_is_force $args) -and (sr_is_done (script_name))) {
+# FIXME: this script broken on arm64.
+
+if (-not (force_exec) -and (setup_done)) {
 	log 'Installing BuildTools ... Skipped'
 	exit
 }
@@ -18,12 +20,12 @@ $asan = 'Microsoft.VisualStudio.Component.VC.ASAN'
 
 winget install --id=$id --custom="`"--add $vctool --add $sdk --add $asan`""
 
-env-path-append "${Env:PROGRAMFILES(x86)}\Microsoft Visual Studio\Installer"
+push_path "${Env:PROGRAMFILES(x86)}\Microsoft Visual Studio\Installer"
 
 $root = & vswhere.exe -products * -requires *.ASAN -property installationPath
 $msvc = (Get-ChildItem "$root\VC\Tools\MSVC").FullName
 
-env-path-append "$msvc\bin\Hostx64\x64"
+push_path "$msvc\bin\Hostx64\x64"
 
-sr_done (script_name)
+mark_setup_done
 log 'Installing BuildTools ... OK'

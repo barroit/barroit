@@ -46,7 +46,7 @@ if (-not (Test-Path $key_pub_path)) {
 
 $name = Split-Path -Leaf $PSCommandPath
 
-run-admin $name
+admin_exec $name
 
 sr_done (script_name)
 log 'Configuring sshd ... OK'

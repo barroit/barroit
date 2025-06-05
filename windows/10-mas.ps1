@@ -1,30 +1,25 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-function is_activated
+function activated
 {
-	$product = Get-CimInstance -Query "SELECT LicenseStatus `
-					   FROM SoftwareLicensingProduct `
-					   WHERE PartialProductKey IS NOT NULL"
-	$state = $product.LicenseStatus
+	$ret = Get-CimInstance -Query "SELECT LicenseStatus `
+				       FROM SoftwareLicensingProduct `
+				       WHERE PartialProductKey IS NOT NULL"
 
-	return $state -eq 1
+	return $ret.LicenseStatus -eq 1
 }
 
-if (is_activated) {
+if (activated) {
 	log 'Activating Windows ... Skipped'
 	exit
 }
 
-$domain = v1 $PSScriptRoot\..\config\urlmap mas
+$domain = c1 mas $INIT_D_DIR\urlmap
 
-Resolve-DnsName -ErrorAction SilentlyContinue $domain >nul
-if (-not $?) {
-	die "Microsoft Activation Scripts domain ``$domain' is outdated"
-}
+Invoke-RestMethod $domain | Invoke-Expression
 
-Invoke-RestMethod https://$domain | Invoke-Expression
-if (-not (is_activated)) {
-	die 'Windows activation failed'
+if (-not (activated)) {
+	die 'failed to activate Windows'
 }
 
 log 'Activating Windows ... OK'

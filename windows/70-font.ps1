@@ -7,7 +7,7 @@ if ((Get-ChildItem -Filter JetBrainsMono-* $dst).Count) {
 	exit
 }
 
-$url = v1 $PSScriptRoot\..\config\urlmap gcc
+$url = c1 $PSScriptRoot\..\config\urlmap gcc
 $tmp = ".tmp-$PID"
 $zip = "$tmp/$(Split-Path $url -Leaf)"
 
