@@ -1,8 +1,8 @@
 GnuPG.GnuPG
 Kitware.CMake
-LLVM.LLVM			$Env:PROGRAMFILES\LLVM\bin
+LLVM.LLVM			-	$Env:PROGRAMFILES\LLVM\bin
 Microsoft.VisualStudioCode	d
 Ninja-build.Ninja
 Python.Python.3.10
 StrawberryPerl.StrawberryPerl	v
-vim.vim				$Env:PROGRAMFILES\Vim\vim91
+vim.vim				-	$Env:PROGRAMFILES\Vim\vim91

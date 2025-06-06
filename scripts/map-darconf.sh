@@ -12,7 +12,7 @@ if ! git worktree list | grep -q barroit-macos; then
 	git worktree add ../barroit-macos macos
 fi
 
-line=$(grep code/settings.json $root/config/filemap-macos)
+line=$(grep code/settings.json $root/sysinit.d/filemap-macos)
 dst=$(printf '%s\n' "$line" | awk -F'\t+' '{print $2}')
 
 dst=$(eval "printf '%s\n' \"$dst\"")

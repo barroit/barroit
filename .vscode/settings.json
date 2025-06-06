@@ -17,7 +17,7 @@
       "**/assets/ssh/config": "plaintext",
       "**/assets/vim/.vimrc": "plaintext",
       "**/assets/xmodmap/.Xmodmap": "plaintext",
-      "**/config/**": "plaintext",
+      "**/sysinit.d/**": "plaintext",
       "**/Documentation/barroit": "plaintext"
    },
    "fileHeaderComment.parameter": {

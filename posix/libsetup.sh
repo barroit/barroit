@@ -10,7 +10,7 @@ __repo_root=$(dirname $0)/..
 export SCRIPT_NAME=$1
 export ASSETS_ROOT=$__repo_root/assets
 export SCRIPT_ROOT=$__repo_root/scripts
-export CONFIG_ROOT=$__repo_root/config
+export CONFIG_ROOT=$__repo_root/sysinit
 
 . $LIBKIT_ROOT/libsetup-rt.sh
 
