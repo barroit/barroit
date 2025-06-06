@@ -32,3 +32,21 @@ function force_exec
 {
 	return $FORCE_EXEC
 }
+
+function skip_package
+{
+	switch ($args[0]) {
+	'v' {
+		if (-not (virt)) {
+			return 1
+		}
+	}
+	'd' {
+		if (virt) {
+			return 1
+		}
+	}
+	}
+
+	return 0
+}

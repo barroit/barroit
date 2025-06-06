@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-if (-not (sr_is_force $args) -and (Get-Command zstd 2>NUL)) {
+if (-not (force_exec) -and (Get-Command zstd 2>NUL)) {
 	log 'Installing Zstandard ... Skipped'
 	exit
 }
@@ -20,7 +20,7 @@ if (-not (Test-Path zstd)) {
 cd zstd
 
 if (Test-Path build-cmake) {
-	Remove-Item -Recurse
+	Remove-Item -Force -Recurse build-cmake
 }
 
 cmake -B build-cmake -S build/cmake -G Ninja
@@ -29,6 +29,6 @@ cd build-cmake
 
 ninja
 
-env-path-append $PWD\programs
+push_path $PWD\programs
 
 log 'Installing Zstandard ... OK'

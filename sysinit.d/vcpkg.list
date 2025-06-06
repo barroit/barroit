@@ -1,3 +1,4 @@
-dev	gettext
+# SPDX-License-Identifier: GPL-3.0-or-later
 
-gp	zstd
+gettext	v
+zstd

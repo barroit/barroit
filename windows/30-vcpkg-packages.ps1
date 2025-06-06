@@ -1,35 +1,36 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-if (-not (sr_is_force $args) -and (sr_is_done (script_name))) {
+if (-not (force_exec) -and (setup_done)) {
 	log 'Installing vcpkg packages ... Skipped'
 	exit
 }
 
-if (likely-vm) {
-	$is_dev = 1
+if (virt) {
+	$in_virt = 1
 }
 
-$lines = read-line $PSScriptRoot\..\config\vcpkg.list
+foreach ($name in Get-Content $INIT_D_DIR\vcpkg.list) {
+	if (skip_line $name) {
+		continue
+	}
 
-foreach ($line in $lines) {
-	$col = $line -split '\t'
+	$cols = split_column $line
 
-	$type = $col[0]
-	$name = $col[1]
+	$name = $cols[0]
+	$type = $cols[1]
 
-	if ($type -eq 'dev' -and -not $is_dev) {
+	if (skip_package $type) {
 		continue
 	}
 
 	vcpkg install $name
 }
 
-$seg = vcpkg list $name | ForEach-Object { $_ -split ' ' }
-$seg = $seg[0] -split ':'
-
-$triplet = $seg[1]
+$cols = vcpkg list $name | ForEach-Object { $_ -split ' ' }
+$cols = $cols[0] -split ':'
+$triplet = $cols[1]
 
 setenv VCPKG_PACKAGE_PREFIX "$Env:VCPKG_PREFIX\installed\$triplet"
 
-sr_done (script_name)
+mark_setup_done
 log 'Installing vcpkg packages ... OK'

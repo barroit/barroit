@@ -1,39 +1,50 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-$fsrule = [System.Security.AccessControl.FileSystemAccessRule]
+$fs_rule = [System.Security.AccessControl.FileSystemAccessRule]
 
-if (-not (sr_is_force $args) -and (sr_is_done (script_name))) {
+if (-not (force_exec) -and (setup_done)) {
 	log 'Copying private keys ... Skipped'
 	exit
 }
 
-if (-not (Test-Path S:\)) {
-	die "GPG file storage didn't mount to S:"
+$src_dir = 'S:\'
+$ssh_dir = "$HOME\.ssh"
+
+New-Item -ItemType Directory $ssh_dir
+
+if (-not (Test-Path $src_dir)) {
+	die "missing secstor mount point on '$src_dir'"
 }
 
-$rule = New-Object $fsrule($env:USERNAME, 'Read', 'Allow')
+$rule = New-Object $fs_rule($env:USERNAME, 'Read', 'Allow')
 
-:dumbass_continue foreach ($sec in (Get-ChildItem -Filter *.gpg -Name S:\)) {
-	log "Importing $sec ..."
+:dumbass foreach ($name in (Get-ChildItem -Filter *.gpg -Name $src_dir)) {
+	$key = "$src_dir\$name"
 
-	switch -Regex ($sec) {
+	log "Importing $name ..."
+
+	switch -Regex ($name) {
 	'^pg' {
-		gpg --import S:\$sec
+		gpg --import $key
+
 		if (-not $?) {
-			error "Importing $sec ... Failed"
-			continue dumbass_continue
+			error "failed to import $name"
+			continue dumbass
 		}
 	}
 	'^id' {
-		$name = (Get-Item S:\$sec).BaseName
-		$dst = "$HOME\.ssh\$name"
+		$name = (Get-Item $key).BaseName
+		$dst = "$ssh_dir\$name"
 
-		Remove-Item -ErrorAction SilentlyContinue $dst
+		if (Test-Path $dst) {
+			Remove-Item $dst
+		}
 
-		gpg -o $dst -d S:\$sec
+		gpg -o $dst -d $key
+
 		if (-not $?) {
-			error "Importing $name ... Failed"
-			continue dumbass_continue
+			error "failed to import $name"
+			continue dumbass
 		}
 
 		$acl = Get-Acl $dst
@@ -48,12 +59,12 @@ $rule = New-Object $fsrule($env:USERNAME, 'Read', 'Allow')
 		Set-Acl $dst $acl
 	}
 	default {
-		continue dumbass_continue
+		continue dumbass
 	}
 	}
 
-	log "Importing $sec ... DONE"
+	log "Importing $name ... DONE"
 }
 
-sr_done (script_name)
+mark_setup_done
 log 'Copying private keys ... OK'

@@ -1,55 +1,36 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-if (-not (sr_is_force $args) -and (sr_is_done (script_name))) {
+if (-not (force_exec) -and (setup_done)) {
 	log 'Installing winget packages ... Skipped'
 	exit
 }
 
-if (likely-vm) {
-	$is_dev = 1
+if (virt) {
+	$in_virt = 1
 }
 
-$lines = read-line $PSScriptRoot\..\config\winget.list
-
-foreach ($line in $lines) {
-	$skip = 0
-	$col = @($line -split '\t' | Where-Object {
-		$_ -and $_ -notmatch '^#'
-	})
-
-	$name = $col[0]
-	$args = $col[1]
-
-	$args = @($args -split ',')
-
-	foreach ($arg in $args) {
-		switch ($arg) {
-		'v' {
-			if (-not $is_dev) {
-				$skip = 1
-			}
-		}
-		'd' {
-			if ($is_dev) {
-				$skip = 1
-			}
-		}
-		default {
-			$path = $arg
-		}
-		}
+foreach ($line in Get-Content $INIT_D_DIR\winget.list) {
+	if (skip_line $line) {
+		continue
 	}
 
-	if ($skip) {
+	$skip = 0
+	$cols = split_column $line
+
+	$name = $cols[0]
+	$type = $cols[1]
+	$path = $cols[2]
+
+	if (skip_package $type) {
 		continue
 	}
 
 	if ($path) {
-		env-path-append (Invoke-Expression "`"$path`"")
+		push_path (Invoke-Expression "`"$path`"")
 	}
 
 	winget install --id=$name
 }
 
-sr_done (script_name)
+mark_setup_done
 log 'Installing winget packages ... OK'

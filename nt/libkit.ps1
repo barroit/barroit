@@ -173,3 +173,8 @@ function push_path
 
 	sync_path
 }
+
+function split_column
+{
+	@($args[0] -split '\t+')
+}

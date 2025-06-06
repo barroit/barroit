@@ -1,26 +1,17 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-if (Test-Path ~/vcpkg) {
+if (Test-Path $HOME/vcpkg) {
 	log 'Deploying vcpkg ... Skipped'
 	exit
 }
 
-$ws = $PWD
-
-cd ~
+cd $HOME
 git clone https://github.com/microsoft/vcpkg.git
 
 cd vcpkg
-.\bootstrap-vcpkg.bat
+& .\bootstrap-vcpkg.bat
 
-$old = getenv PATH
-$new = "$old;$PWD"
-$seen = $old -split ';' | Where-Object { $_ -eq $PWD }
+push_path $PWD
+setenv VCPKG_PREFIX $PWD
 
-if (-not $seen) {
-	setenv VCPKG_PREFIX $PWD
-	setenv PATH $new
-}
-
-cd $ws
 log 'Deploying vcpkg ... OK'

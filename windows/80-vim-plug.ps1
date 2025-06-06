@@ -12,7 +12,7 @@ if (-not (Test-Path $dst_dir)) {
 	New-Item -ItemType Directory $dst_dir >NUL
 }
 
-$url = v1 $PSScriptRoot\..\config\urlmap vimplug
+$url = c1 $PSScriptRoot\..\config\urlmap vimplug
 
 curl -o $dst $url
 

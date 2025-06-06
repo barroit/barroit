@@ -1,19 +1,17 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-if (-not (sr_is_force $args) -and (sr_is_done (script_name))) {
+if (-not (force_exec) -and (setup_done)) {
 	log 'Installing pip packages ... Skipped'
 	exit
 }
 
-$lines = read-line $PSScriptRoot\..\config\pip.list.win
-
-foreach ($line in $lines) {
-	if (-not $line -or $line -match '^#') {
+foreach ($name in Get-Content $INIT_D_DIR\pip.list.win) {
+	if (skip_line $name) {
 		continue
 	}
 
-	pip install $line
+	pip install $name
 }
 
-sr_done (script_name)
+mark_setup_done
 log 'Installing pip packages ... OK'
