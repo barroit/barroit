@@ -2,9 +2,10 @@
 
 #requires -version 7
 
-. $PSScriptRoot\libkit.ps1
+$script_root = $PSScriptRoot
+$libkit_root = "$script_root\..\nt"
 
-$scripts = Get-ChildItem -Name -Filter ??-*.ps1 $PSScriptRoot
+. $libkit_root\libkit.ps1
 
 if ($args.Length) {
 	$name = $args[0]
@@ -14,41 +15,38 @@ if ($args.Length) {
 		$name = $name.Substring(1);
 	}
 
-	if ($name -notmatch '^\d\d-.+\.ps1$') {
-		$script = $scripts | Where-Object {
-			$_ -match "^\d\d-$name.*\.ps1$"
-		}
-
-		if ($script -is [array]) {
-			$ambig = $script | ForEach-Object { "`n  $_" }
-
-			die "ambiguous script ``$name'; could be:$ambig"
-		} elseif ($script -isnot [string]) {
-			die "unknown script ``$name'"
-		}
-	} elseif (-not (Test-Path $PSScriptRoot\$name)) {
-		die "unknown script ``$name'"
+	if ($name -match '^\d\d-') {
+		$scripts = Get-ChildItem -Name -Filter $name $script_root
 	} else {
-		$script = $name
+		$scripts = Get-ChildItem -Name `
+					 -Filter ??-$name*.ps1 $script_root
 	}
 
-	$cmd = "& '$PSScriptRoot\$script'"
-
-	if ($force) {
-		$cmd += " Force=1"
+	if (-not $scripts) {
+		die "unknown script '$name'"
 	}
 
-	log "Executing $PSScriptRoot\$script"
+	if ($scripts -is [array]) {
+		$lines = $scripts | ForEach-Object { "`n  $_" }
 
-	pwsh -Command ". '$PSScriptRoot\libkit.ps1'; sync-env-path; $cmd"
-	exit
+		die "ambiguous name '$name'; could be:$lines"
+	}
 }
 
-foreach ($script in $scripts) {
-	pwsh -Command ". '$PSScriptRoot\libkit.ps1'; `
-		       sync-env-path; & '$PSScriptRoot\$script'"
+if (-not $scripts) {
+	$scripts = Get-ChildItem -Name -Filter ??-*.ps1 $script_root
+}
+
+foreach ($name in $scripts) {
+	$script = "$script_root\$name"
+
+	if (-not $force) {
+		pwsh $script_root\exec.ps1 $script
+	} else {
+		pwsh $script_root\exec.ps1 -__force $script
+	}
 
 	if (-not $?) {
-		warn "$PSScriptRoot\$script interrupted"
+		warn "$script interrupted"
 	}
 }

@@ -15,5 +15,5 @@ pwsh -Command ^
      "Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser;" ^
      "exit"
 
-echo Core scripting functionality set up
+echo Configuring core functionality ... OK
 
