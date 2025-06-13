@@ -4,22 +4,25 @@
 
 Here's Jiamu Sun. A Miku fan who started programming in the first year of high
 school. IDEs are forbidden. Prefers GNU C over C++. Also comfortable with shell
-scripting and low-level programming. Experienced in cross-platform development.
-Uses Git fluently — at a level most IDE users probably wouldn't bother with.
-Strives for simplicity and maintainability, avoiding unnecessary abstraction
-and over-engineering.
+scripting and low-level programming. Experienced in cross-platform development,
+version management, and build system design. Understands systems deeply, from
+memory layout to compiler behavior. Uses sanitizers to prevent memory errors.
+Rejects unnecessary layers, prefers lean code and simple workflows. Designs
+tools with consistency and minimalism in mind. Strives for simplicity and
+maintainability, avoiding unnecessary abstraction and over-engineering.
 
 Development experience covers areas such as:
 
-	TUI–GUI hybrid framework        - brukit
-	Password management             - passkeeper / cred
-	Discord bot development         - discot
-	Automated file backup tool      - savesave
-	Core Keeper modding             - corekeeper-autofish
-	Automated light/AC controller   - livaut
-	Full-stack web development      - Baioretto.com / barroit.cc
-	Minecraft plugin development
-	Vocaloid music production
+	Command-line framework   - brukit
+	System init framework    - barroit
+	Password manager         - passkeeper / cred
+	Discord bot              - discot
+	File backup tool         - savesave
+	Core Keeper mod          - corekeeper-autofish
+	Light/AC controller      - livaut
+	Full-stack website       - Baioretto.com / barroit.sh
+	Minecraft plugin
+	Vocaloid music
 
 Currently in Japan for Miku. Languages spoken:
 
