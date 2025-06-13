@@ -27,3 +27,5 @@ Here's a list of available guides and features of the core:
    Development tools <dev-tools/index>
 
    Miscellaneous guides <misc/index>
+
+   konami/index
