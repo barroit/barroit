@@ -5,12 +5,16 @@ set -e
 
 branch=$(git branch --show-current)
 
-git push
+if [[ -z $(git for-each-ref --format '%(upstream:short)' $branch) ]]; then
+	git push --set-upstream origin $branch
+else
+	git push
+fi
 
 git add .
 git commit -smTMP
 
-trap 'git reset --hard HEAD^' EXIT
+trap 'git reset HEAD^' EXIT
 
 if [ $(uname -o) = GNU/Linux ]; then
 	host=dev.macos
@@ -40,3 +44,5 @@ git am -
 git reset HEAD^
 git remote remove move-wip
 "
+
+trap 'git reset --hard HEAD^' EXIT
