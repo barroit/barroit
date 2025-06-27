@@ -70,7 +70,8 @@
    },
    "[html]": {
       "editor.insertSpaces": true,
-      "editor.tabSize": 2
+      "editor.tabSize": 8,
+      "editor.indentSize": 2
    },
    /* -------------------------  File Header Comment  ------------------------- */
    "fileHeaderComment.template": {
@@ -128,6 +129,7 @@
    "C_Cpp.autoAddFileAssociations": false,
    "files.associations": {
       "*gdbinit": "plaintext",
+      "*lldbinit": "plaintext",
       "README*": "plaintext",
       "Kconfig": "plaintext",
       "TODO": "plaintext",
@@ -136,7 +138,7 @@
       ".config*": "plaintext",
       "*.h.in": "c",
       "*.hpp.in": "cpp",
-      "settings.json": "jsonc"
+      "settings.json": "jsonc",
    },
    /* --------------------------------  Font  --------------------------------- */
    "editor.fontFamily": "'JetBrains Mono'",
@@ -196,6 +198,8 @@
                "storage.type.built-in.primitive",
                "storage.type.primitive.java",
                "support.class.component.js.jsx",
+               "support.function.be.latex",
+               "support.function.general.tex",
                "support.type.built-in.posix-reserved",
                "support.type.posix-reserved"
             ]
@@ -206,6 +210,7 @@
             },
             "scope": [
                "comment",
+               "constant.character.entity.tsx",
                "constant.character.escape",
                "constant.character.set.regexp",
                "constant.language",
@@ -234,6 +239,7 @@
                "keyword.operator.quantifier.regexp",
                "meta.parameters.js",
                "meta.preprocessor.macro",
+               "meta.property-list.css",
                "punctuation.accessor.cs",
                "punctuation.accessor.js",
                "punctuation.accessor.tsx",
@@ -244,10 +250,12 @@
                "punctuation.separator.comma.js",
                "punctuation.separator.comma.tsx",
                "punctuation.separator.delimiter.php",
+               "punctuation.separator.key-value.css",
                "punctuation.separator.key-value.js",
                "punctuation.separator.key-value.ts",
                "punctuation.separator.key-value.tsx",
                "punctuation.terminator.expression.php",
+               "punctuation.terminator.rule.css",
                "punctuation.terminator.statement.js",
                "storage.modifier.import.java",
                "storage.modifier.pointer",
