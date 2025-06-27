@@ -29,8 +29,14 @@ Host github.com
 	IdentityFile ~/.ssh/id_github
 	IdentitiesOnly yes
 
-Host noble.oci
-	HostName 140.83.57.178
+Host barroit.sh
+	HostName barroit.sh.oci
 	User ubuntu
-	IdentityFile ~/.ssh/id_oci_noble
+	IdentityFile ~/.ssh/id_barroit_sh
+	IdentitiesOnly yes
+
+Host crap.barroit.sh
+	HostName crap.barroit.sh.oci
+	User ubuntu
+	IdentityFile ~/.ssh/id_crap_barroit_sh
 	IdentitiesOnly yes
