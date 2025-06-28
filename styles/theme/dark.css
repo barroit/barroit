@@ -1,0 +1,31 @@
+/* SPDX-License-Identifier: GPL-3.0-or-later */
+/*
+ * Copyright 2025 Jiamu Sun <barroit@linux.com>
+ */
+
+body {
+	color: #e8e8e8;
+	background-color: #1f1f1f;
+}
+
+a {
+	color: #99c3ff;
+}
+
+a:visited {
+	color: #c58af9;
+}
+
+button {
+	background-color: #1a1a1a;
+}
+
+button:hover {
+	background-color: #3e3e3e;
+}
+
+button:focus,
+button:focus-visible {
+	outline-color: #99c3ff;
+	background-color: #3e3e3e;
+}
