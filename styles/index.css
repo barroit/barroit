@@ -1,0 +1,61 @@
+/* SPDX-License-Identifier: GPL-3.0-or-later */
+/*
+ * Copyright 2025 Jiamu Sun <barroit@linux.com>
+ *
+ * WCAG 2.2 AA compliant stylesheet.
+ */
+
+@import 'tailwindcss';
+
+@import './font.css';
+
+@import './shell.css';
+
+@media (prefers-color-scheme: dark)
+{
+	@import './theme/dark.css';
+}
+
+@media (prefers-color-scheme: light)
+{
+	@import './theme/light.css';
+}
+
+html {
+	font-size: clamp(14px, 1vw + 1vh, 18px);
+}
+
+body {
+	block-size: 100dvh;
+
+	font-family: 'JetBrains Mono', monospace;
+	line-height: 1.625;
+}
+
+h1 { font-size: 2.7rem }
+h2 { font-size: 2.2rem }
+h3 { font-size: 1.7rem }
+h4 { font-size: 1.3rem }
+h5 { font-size: 1.3rem }
+h6 { font-size: 1.3rem }
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+
+a:hover,
+.shell:hover a {
+	text-decoration: underline;
+	text-decoration-thickness: 0.1rem;
+	cursor: pointer;
+}
+
+button {
+	padding: 0.2rem 0.8rem;
+	border-radius: 0.5rem;
+
+	cursor: pointer;
+	outline: 0.1rem solid transparent;
+
+	@apply transition-all duration-300;
+}
