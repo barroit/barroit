@@ -8,8 +8,12 @@
 
 #include <node_api.h>
 
-napi_value addon_rand(napi_env env, napi_callback_info info);
+uint32_t rand_once(void);
 
-napi_value addon_rand_n(napi_env env, napi_callback_info info);
+uint32_t rand_within(uint32_t s);
+
+napi_value addon_rand_once(napi_env env, napi_callback_info info);
+
+napi_value addon_rand_within(napi_env env, napi_callback_info info);
 
 #endif /* FUNCDEF_H */
