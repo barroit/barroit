@@ -3,35 +3,36 @@
  * Copyright 2025 Jiamu Sun <barroit@linux.com>
  */
 
+#include "bug.h"
 #include "calc.h"
-#include "compiler.h"
 #include "iter.h"
 
 #include "rand.h"
+#include "shuffle.h"
 
-#define FNDATA(x) { .func = x, .name = STRINGIFY(x) }
+#define FN(x) { .fn = addon_ ## x, .name = __stringify(x) }
 
-struct func_data {
-	napi_callback func;
+struct fn {
+	napi_callback fn;
 	const char *name;
 };
 
-struct func_data func_list[] = {
-	FNDATA(addon_rand),
-	FNDATA(addon_rand_n),
+struct fn fns[] = {
+	FN(rand_once),
+	FN(rand_within),
+	FN(shuffle),
 };
 
 napi_value Init(napi_env env, napi_value mod)
 {
 	unsigned i;
 
-	idx_for_each(i, sizeof_array(func_list)) {
-		napi_value node_func;
-		struct func_data *data = &func_list[i];
+	idx_for_each(i, sizeof_array(fns)) {
+		napi_value fn;
+		struct fn *info = &fns[i];
 
-		napi_create_function(env, NULL, 0,
-				     data->func, NULL, &node_func);
-		napi_set_named_property(env, mod, data->name, node_func);
+		napi_create_function(env, NULL, 0, info->fn, NULL, &fn);
+		napi_set_named_property(env, mod, info->name, fn);
 	}
 
 	return mod;
