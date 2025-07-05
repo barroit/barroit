@@ -43,19 +43,28 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: bold;
 }
 
-a:hover,
-.shell:hover a {
-	text-decoration: underline;
-	text-decoration-thickness: 0.1rem;
+a,
+button {
+	outline: 0.2rem solid transparent;
+	@apply duration-200;
+}
+
+a {
+	border-radius: 0.2rem;
 	cursor: pointer;
 }
 
 button {
-	padding: 0.2rem 0.8rem;
 	border-radius: 0.5rem;
-
 	cursor: pointer;
-	outline: 0.1rem solid transparent;
+}
 
-	@apply transition-all duration-300;
+a:hover,
+.shell:hover a {
+	text-decoration: underline;
+	text-decoration-thickness: 0.1rem;
+}
+
+.center-y {
+	@apply absolute top-1/2 -translate-y-1/2;
 }
