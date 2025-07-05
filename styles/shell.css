@@ -4,12 +4,12 @@
  */
 
 .shell > * {
-	padding: 0 0.8rem;	
+	padding: 0 0.8rem;
 }
 
 .shell::after,
 .shell::before {
-	color: #ff2222;
+	color: var(--shell-color);
 	position: absolute;
 
 	@apply transition-all;

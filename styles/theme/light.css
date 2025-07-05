@@ -24,8 +24,7 @@ button:hover {
 	background-color: #d4d9e5;
 }
 
-button:focus,
+a:focus-visible,
 button:focus-visible {
 	outline-color: #2054cc;
-	background-color: #d4d9e5;
 }
