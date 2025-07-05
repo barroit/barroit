@@ -5,9 +5,9 @@
 
 export function rand_once()
 {
-	const buf = new Uint32Array(1);
+	const buf = new Uint32Array(1)
 
-	window.crypto.getRandomValues(buf);
+	window.crypto.getRandomValues(buf)
 
 	return buf[0]
 }
