@@ -3,10 +3,11 @@
  * Copyright 2025 Jiamu Sun <barroit@linux.com>
  */
 
-import { useRef } from 'react'
+import { useContext, useEffect, useRef } from 'react'
 
 import isspace from './isspace.js'
 import shuffle from './shuffle.js'
+import { shell_ctx } from './shell.jsx'
 
 function pds_1d(arr, size, min)
 {
@@ -31,20 +32,6 @@ function pds_1d(arr, size, min)
 	return ret
 }
 
-function make_span(c, i)
-{
-return (
-<span key={i} className='duration-120'>{ c }</span>
-) /* return */
-}
-
-function make_span_list(str)
-{
-	const chars = [ ...str ]
-
-	return chars.map(make_span)
-}
-
 function flicker_on(box, enabled, imap)
 {
 	if (enabled.current)
@@ -56,7 +43,10 @@ function flicker_on(box, enabled, imap)
 	let delay = 0
 
 	const shuffled = shuffle(imap)
-	const picked = pds_1d(shuffled, shuffled.length / 2, 2)
+	let picked = pds_1d(shuffled, shuffled.length / 2, 2)
+
+	if (!picked.length)
+		picked = [ shuffled[0] ]
 
 	let on_i = 0
 	const on_id = setInterval(() =>
@@ -73,7 +63,7 @@ function flicker_on(box, enabled, imap)
 	const off_id = setInterval(() =>
 	{
 		if (init) {
-			init--;
+			init--
 			return
 		}
 
@@ -91,23 +81,35 @@ export default function Flicker({ children })
 {
 	const box = useRef()
 	const enabled = useRef(0)
+	const shell = useContext(shell_ctx)
 
-	const spans = make_span_list(children)
-
+	const chars = [ ...children ]
 	const imap = []
 	let i
 
-	for (i = 0; i < children.length; i++) {
-		if (isspace(children[i]))
+	for (i = 0; i < chars.length; i++) {
+		if (isspace(chars[i]))
 			continue
 
 		imap.push(i)
 	}
 
+	const cb = () => flicker_on(box, enabled, imap)
+
+	useEffect(() =>
+	{
+		if (shell) {
+			shell.current ??= {}
+			shell.current.flicker = { type: MouseEvent, cb }
+		}
+	}, [])
+
 return (
-<span ref={box}
-      onMouseEnter={() => flicker_on(box, enabled, imap)}>
-  { spans }
+<span ref={ box }
+      onMouseEnter={ shell ? undefined : cb }>
+{chars.map((c, i) => (
+  <span key={ i } className='duration-120'>{ c }</span>
+))}
 </span>
 ) /* return */
 }
