@@ -247,6 +247,7 @@
                "meta.property-list.css",
                "punctuation.accessor.cs",
                "punctuation.accessor.js",
+               "punctuation.accessor.optional.js.jsx",
                "punctuation.accessor.tsx",
                "punctuation.definition.template-expression.begin.js",
                "punctuation.definition.template-expression.end.js",
@@ -280,6 +281,7 @@
                "support.function.dir.makefile",
                "support.function.error.makefile",
                "support.function.filter.makefile",
+               "support.function.gradient.css",
                "support.function.js",
                "support.function.lastword.makefile",
                "support.function.misc.css",
@@ -307,6 +309,7 @@
                "support.variable.ts",
                "support.variable.tsx",
                "variable",
+               "variable.argument.css",
                "variable.language.makefile",
                "variable.legacy.builtin.python",
                "variable.other.constant",
@@ -337,5 +340,8 @@
    "workbench.editor.empty.hint": "hidden",
    "xml.symbols.maxItemsComputed": -1,
    "editor.unicodeHighlight.ambiguousCharacters": false,
-   "javascript.updateImportsOnFileMove.enabled": "never"
+   "javascript.updateImportsOnFileMove.enabled": "never",
+   "workbench.editorAssociations": {
+      "*.svg": "default"
+   }
 }

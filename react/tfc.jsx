@@ -3,7 +3,20 @@
  * Copyright 2025 Jiamu Sun <barroit@linux.com>
  */
 
-export default function TheFuckingContent({ size })
+export default function TheFuckingContent({ length = 1,
+					    items = 1,
+					    className = '' })
 {
-return <span className='invisible'>{'.'.repeat(size)}</span>
+	className += ' invisible'
+
+	const content = '.'.repeat(length)
+	const lines = Array(items).fill(content)
+
+return (
+<>
+  {lines.map((line, i) => (
+  <span key={ i } className={ className }>{ line }</span>
+  ))}
+</>
+) /* return */
 }
