@@ -34,3 +34,18 @@
 	font-style: italic;
 	font-display: swap;
 }
+
+@font-face {
+	font-family: 'ScoreDozer';
+	src: url('./fonts/ScoreDozer.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'IPAexGothic';
+	src: url('./fonts/IPAexGothic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'IPAexMincho';
+	src: url('./fonts/IPAexMincho.ttf') format('truetype');
+}
