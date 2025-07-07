@@ -41,11 +41,29 @@
 }
 
 @font-face {
-	font-family: 'IPAexGothic';
-	src: url('./fonts/IPAexGothic.ttf') format('truetype');
+	font-family: 'Space Mono';
+	src: url('./fonts/SpaceMono-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
 }
 
 @font-face {
-	font-family: 'IPAexMincho';
-	src: url('./fonts/IPAexMincho.ttf') format('truetype');
+	font-family: 'Space Mono';
+	src: url('./fonts/SpaceMono-Italic.ttf') format('truetype');
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Space Mono';
+	src: url('./fonts/SpaceMono-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Space Mono';
+	src: url('./fonts/SpaceMono-BoldItalic.ttf') format('truetype');
+	font-weight: 700;
+	font-style: italic;
 }
