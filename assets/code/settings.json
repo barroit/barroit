@@ -277,6 +277,7 @@
                "support.constant.property-value.css",
                "support.function.attribute.powershell",
                "support.function.builtin",
+               "support.function.calc.css",
                "support.function.construct.php",
                "support.function.dir.makefile",
                "support.function.error.makefile",
