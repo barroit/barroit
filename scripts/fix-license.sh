@@ -57,7 +57,7 @@ case $lines in
 	printf '%s\n' ".. $rep"
 	;;
 *)
-	if [ $file = FIXLICENSE ]; then
+	if [ $file = .licensefix ]; then
 		exit
 	fi
 

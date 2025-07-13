@@ -53,9 +53,9 @@ elif [ -f .pickignore ]; then
 	done
 fi
 
-if [ -f FIXLICENSE ]; then
-	new=$(v2 FIXLICENSE new)
-	old=$(v2 FIXLICENSE old)
+if [ -f .licensefix ]; then
+	new=$(v2 .licensefix new)
+	old=$(v2 .licensefix old)
 
 	$root/scripts/fix-license.sh "$old" "$new"
 fi
