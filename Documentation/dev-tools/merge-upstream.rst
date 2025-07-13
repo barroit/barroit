@@ -26,7 +26,7 @@ directory location with::
 
 Don't assume it's under ``.git/``. Worktree gitdirs live in subdirectories.
 
-This script also fixes licenses if you provide a ``FIXLICENSE`` file in your
+This script also fixes licenses if you provide a ``.licensefix`` file in your
 cwd. The file must follow this format::
 
 	new	<license>
