@@ -7,28 +7,32 @@ script_root=$(dirname $script_path)
 . $script_root/../posix/libkit.sh
 
 if [ ! -f NAME ]; then
-	die 'missing NAME file'
+	die 'missing NAME'
 fi
 
 if [ -n "$1" ]; then
-	versrc=$1
+	pathspec=$1
 elif [ -f VERSION ]; then
-	versrc=VERSION
+	pathspec=VERSION
 else
 	die 'missing version source'
 fi
 
-if [ ! "$(git diff $versrc)" ] &&
-   [ ! "$(git diff --staged $versrc)" ] &&
-   [ $(git ls-files $versrc) ]; then
-	die "no changes in $versrc"
+if [ -n "$TAG_PREFIX" ]; then
+	prefix="$TAG_PREFIX-"
 fi
 
-git add $versrc
+if git diff --quiet $pathspec &&
+   git diff --quiet --staged $pathspec &&
+   [ -n "$(git ls-files $pathspec)" ]; then
+	die "no changes in $pathspec"
+fi
+
+git add $pathspec
 
 name=$(cat NAME)
-version=$(cat $versrc)
+version=$(cat $pathspec)
 
 git commit -m "$name $version"
 
-git tag -sm "$name $version" "v$version"
+git tag -sm "$name $version" "${prefix}v$version"
