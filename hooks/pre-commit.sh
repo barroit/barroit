@@ -22,5 +22,5 @@ fi
 
 git diff --cached --check
 
-printf '%s\n' "$files" | \
-xargs -P$(nproc) -n1 -- codespell --config $HOME/.codespellrc
+printf '%s\n' "$files" | xargs -P$(nproc) -n1 -- \
+codespell --config $HOME/.codespellrc --config $(pwd)/.codespellrc
