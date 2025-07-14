@@ -54,10 +54,10 @@ elif [ -f .pickignore ]; then
 fi
 
 if [ -f .licensefix ]; then
-	new=$(v2 .licensefix new)
-	old=$(v2 .licensefix old)
+	new=$(v1 .licensefix new)
+	old=$(v1 .licensefix old)
 
-	$root/scripts/fix-license.sh "$old" "$new"
+	$script_root/../scripts/fix-license.sh "$old" "$new"
 fi
 
 cp $gitdir/MERGE_MSG.1 $gitdir/MERGE_MSG
