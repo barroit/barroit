@@ -4,7 +4,7 @@ bump-version.sh
 
 fix-license.sh
 
-merge-upstream.sh
+merge.sh
 
 move-wip.sh
 
