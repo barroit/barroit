@@ -98,6 +98,10 @@ if [ -f .licensefix ]; then
 	$script_root/../scripts/fix-license.sh "$old" "$new"
 fi
 
+if [ -f ./scripts/merge-fix.sh ] && [ -x ./scripts/merge-fix.sh ]; then
+	./scripts/merge-fix.sh
+fi
+
 cp $gitdir/MERGE_MSG.1 $gitdir/MERGE_MSG
 
 if [ -z "$(git diff --name-only --diff-filter=U)" ] || [ $do_ff ]; then
