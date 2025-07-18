@@ -21,7 +21,8 @@ function handle_event(event, shell)
 	}
 }
 
-export default function Shell({ children, left, right, color })
+export default function Shell({ children, color,
+				left, right, padding, offset, move })
 {
 	const shell = useRef()
 
@@ -31,8 +32,13 @@ return (
      onMouseEnter={ event => handle_event(event, shell) }>
   <ShellContext value={ shell }>
     <div className='shell'
-         data-left={ left } data-right={ right }
-	 style={ { '--shell-color': color ?? '#ff2222' } }>
+         data-left={ left ?? '[' } data-right={ right ?? ']' }
+	 style={ {
+		'--shell-color': color ?? '#ff2222',
+		'--shell-padding': padding ?? '0.8rem',
+		'--shell-offset': offset ?? '0.1rem',
+		'--shell-move':move ?? '0.5rem',
+	} }>
       { children }
     </div>
   </ShellContext>
