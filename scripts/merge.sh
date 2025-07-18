@@ -12,16 +12,15 @@ if [ -z "$1" ]; then
 	die 'missing ref'
 fi
 
+if ! git rev-parse --verify --quiet $1 >/dev/null; then
+	die "invalid ref '$1'"
+fi
+
 if [ -n "$(git status --short)" ]; then
 	die 'stash your worktree and index'
 fi
 
-that=$(git rev-parse --symbolic-full-name $1 2>/dev/null || true)
-
-if [ -z "$that" ]; then
-	die "invalid ref '$1'"
-fi
-
+that=$(git rev-parse --symbolic-full-name $1)
 that_remote=$(git for-each-ref --format='%(upstream:remotename)' $that)
 
 if [ -z "$that_remote" ]; then
