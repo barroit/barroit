@@ -4,7 +4,6 @@ Licenses
 JetBrains Mono		OFL-1.1
 Space Mono		OFL-1.1
 
-LICENSES/ directory stores all license files listed above.
-
-For ScoreDozer.ttf, using this font without credit is permitted, so no license
-file is associated with it.
+LICENSES/ directory stores all license files listed above. For
+x14y20pxScoreDozer.ttf and x16y32pxGridGazer.ttf, using these fonts without
+credit is permitted, so no license file is associated with it.
