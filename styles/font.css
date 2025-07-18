@@ -36,34 +36,11 @@
 }
 
 @font-face {
-	font-family: 'ScoreDozer';
-	src: url('./fonts/ScoreDozer.ttf') format('truetype');
+	font-family: 'x14y20pxScoreDozer';
+	src: url('./fonts/x14y20pxScoreDozer.ttf') format('truetype');
 }
 
 @font-face {
-	font-family: 'Space Mono';
-	src: url('./fonts/SpaceMono-Regular.ttf') format('truetype');
-	font-weight: 400;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Space Mono';
-	src: url('./fonts/SpaceMono-Italic.ttf') format('truetype');
-	font-weight: 400;
-	font-style: italic;
-}
-
-@font-face {
-	font-family: 'Space Mono';
-	src: url('./fonts/SpaceMono-Bold.ttf') format('truetype');
-	font-weight: 700;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Space Mono';
-	src: url('./fonts/SpaceMono-BoldItalic.ttf') format('truetype');
-	font-weight: 700;
-	font-style: italic;
+	font-family: 'x16y32pxGridGazer';
+	src: url('./fonts/x16y32pxGridGazer.ttf') format('truetype');
 }
