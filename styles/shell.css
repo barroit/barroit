@@ -4,9 +4,9 @@
  */
 
 .shell > * {
-	padding: 0 0.8rem;
+	padding: 0 var(--shell-padding);
 }
-
+/* 0.8rem */
 .shell::after,
 .shell::before {
 	color: var(--shell-color);
@@ -17,18 +17,18 @@
 
 .shell::before {
 	content: attr(data-left);
-	left: 0.1rem;
+	left: var(--shell-offset);
 }
 
 .shell::after {
 	content: attr(data-right);
-	right: 0.1rem;
-}
-
-.shell:hover::after {
-	@apply translate-x-2
+	right: var(--shell-offset);
 }
 
 .shell:hover::before {
-	@apply -translate-x-2
+	@apply -translate-x-(--shell-move)
+}
+
+.shell:hover::after {
+	@apply translate-x-(--shell-move)
 }
