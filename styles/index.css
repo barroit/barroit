@@ -38,7 +38,7 @@ html {
 }
 
 body {
-	block-size: 100dvh;
+	min-block-size: 100svh;
 	line-height: 1.625;
 }
 
