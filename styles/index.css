@@ -19,16 +19,14 @@
 	--breakpoint-2xl: 90rem;
 }
 
-@utility center-x {
-	@apply right-1/2 translate-x-1/2;
+@utility tab-* {
+	tab-size: --value(integer);
 }
 
-@utility center-y {
-	@apply top-1/2 -translate-y-1/2;
-}
-
-@utility center {
-	@apply center-x center-y;
+@custom-variant light {
+	@media (prefers-color-scheme: light) {
+		@slot;
+	}
 }
 
 html {
