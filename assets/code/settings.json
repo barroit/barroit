@@ -206,6 +206,7 @@
                "support.function.cmake",
                "support.function.be.latex",
                "support.function.general.tex",
+               "support.function.section.latex",
                "support.type.built-in.posix-reserved",
                "support.type.posix-reserved"
             ]
@@ -239,11 +240,13 @@
                "entity.other.attribute-name",
                "entity.other.attribute-name.pseudo-class.css",
                "interpolated.complex.source.powershell",
+               "keyword.control.anchor.regexp",
                "keyword.control.directive",
                "keyword.control.directive",
                "keyword.operator",
                "keyword.operator.quantifier.regexp",
                "meta.parameters.js",
+               "meta.jsx.children.js.jsx",
                "meta.preprocessor.macro",
                "meta.property-list.css",
                "punctuation.accessor.cs",
@@ -291,9 +294,11 @@
                "support.function.misc.css",
                "support.function.patsubst.makefile",
                "support.function.powershell",
+               "support.function.r",
                "support.function.realpath.makefile",
                "support.function.shell.makefile",
                "support.function.target.PHONY.makefile",
+               "support.function.transform.css",
                "support.function.ts",
                "support.function.tsx",
                "support.function.url.css",
@@ -303,6 +308,7 @@
                "support.type.object.module.js",
                "support.type.primitive.ts",
                "support.type.property-name.css",
+               "support.type.property-name.json",
                "support.type.property-name.json.comments",
                "support.type.python",
                "support.variable.automatic.powershell",
@@ -314,11 +320,13 @@
                "support.variable.tsx",
                "variable",
                "variable.argument.css",
+               "variable.css",
                "variable.language.makefile",
                "variable.legacy.builtin.python",
                "variable.other.constant",
                "variable.other.enummember",
                "variable.other.member.powershell",
+               "variable.parameter.keyframe-list.css",
                "variable.parameter.misc.css"
             ]
          },
@@ -347,5 +355,6 @@
    "javascript.updateImportsOnFileMove.enabled": "never",
    "workbench.editorAssociations": {
       "*.svg": "default"
-   }
+   },
+   "workbench.secondarySideBar.defaultVisibility": "hidden"
 }
