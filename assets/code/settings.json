@@ -205,6 +205,7 @@
                "support.class.component.js.jsx",
                "support.function.be.latex",
                "support.function.general.tex",
+               "support.function.section.latex",
                "support.type.built-in.posix-reserved",
                "support.type.posix-reserved"
             ]
@@ -243,6 +244,7 @@
                "keyword.operator",
                "keyword.operator.quantifier.regexp",
                "meta.parameters.js",
+               "meta.jsx.children.js.jsx",
                "meta.preprocessor.macro",
                "meta.property-list.css",
                "punctuation.accessor.cs",
@@ -288,9 +290,11 @@
                "support.function.misc.css",
                "support.function.patsubst.makefile",
                "support.function.powershell",
+               "support.function.r",
                "support.function.realpath.makefile",
                "support.function.shell.makefile",
                "support.function.target.PHONY.makefile",
+               "support.function.transform.css",
                "support.function.ts",
                "support.function.tsx",
                "support.function.url.css",
@@ -311,11 +315,13 @@
                "support.variable.tsx",
                "variable",
                "variable.argument.css",
+               "variable.css",
                "variable.language.makefile",
                "variable.legacy.builtin.python",
                "variable.other.constant",
                "variable.other.enummember",
                "variable.other.member.powershell",
+               "variable.parameter.keyframe-list.css",
                "variable.parameter.misc.css"
             ]
          },
@@ -344,5 +350,6 @@
    "javascript.updateImportsOnFileMove.enabled": "never",
    "workbench.editorAssociations": {
       "*.svg": "default"
-   }
+   },
+   "workbench.secondarySideBar.defaultVisibility": "hidden"
 }
