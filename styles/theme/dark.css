@@ -19,16 +19,15 @@ a:visited {
 	color: #c58af9;
 }
 
-button {
+button.default {
 	background-color: #1a1a1a;
 }
 
-button:hover {
+button.default:hover {
 	background-color: #3e3e3e;
 }
 
-a:focus-visible,
-button:focus-visible {
+*:focus-visible {
 	outline-color: #99c3ff;
 }
 

@@ -56,21 +56,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a, button {
-	outline: 0.2rem solid transparent;
+	cursor: pointer;
 	@apply duration-200;
 }
 
-a {
-	border-radius: 0.2rem;
-	cursor: pointer;
+a:hover {
+	text-decoration: underline;
 }
 
-button {
-	border-radius: 0.5rem;
-	cursor: pointer;
+a {
+	outline: 0.2rem solid transparent;
+	border-radius: 0.2rem;
 }
 
 a:hover, .shell:hover a {
-	text-decoration: underline;
 	text-decoration-thickness: 0.1rem;
+}
+
+button {
+	outline: 0.2rem solid transparent;
+	border-radius: 0.5rem;
 }
