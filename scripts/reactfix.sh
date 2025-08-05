@@ -5,7 +5,7 @@ set -e
 
 mkdir -p build
 
-find -L styles react -type f | while read name; do
+find -L assets styles react -type f | while read name; do
 	mkdir -p build/$(dirname $name)
 	ln -f $name build/$name
 done
