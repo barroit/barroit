@@ -77,7 +77,7 @@ function flicker_on(box, enabled, imap)
 	}, 40)
 }
 
-export default function Flicker({ children })
+export default function Flicker({ children, className })
 {
 	const box = useRef()
 	const enabled = useRef(0)
@@ -95,21 +95,31 @@ export default function Flicker({ children })
 	}
 
 	const cb = () => flicker_on(box, enabled, imap)
+	const matcher = window.matchMedia('(prefers-reduced-motion: reduce)')
+	const reduced = matcher.matches
 
 	useEffect(() =>
 	{
-		if (shell) {
+		if (!reduced && shell) {
 			shell.current ??= {}
 			shell.current.flicker = { type: MouseEvent, cb }
 		}
 	}, [])
 
 return (
-<span ref={ box }
+reduced ? (
+<span className={ className }>
+{chars.map((c, i) => (
+  <span key={ i }>{ c }</span>
+))}
+</span>
+) : (
+<span ref={ box } className={ className }
       onMouseEnter={ shell ? undefined : cb }>
 {chars.map((c, i) => (
   <span key={ i } className='duration-120'>{ c }</span>
 ))}
 </span>
+)
 ) /* return */
 }
