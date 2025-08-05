@@ -4,8 +4,8 @@
  */
 
 @utility lightbase {
-	color: #1f1f1f;
-	background-color: #ffffff
+	color: var(--color-xneu-950);
+	background-color: #ffffff;
 }
 
 @media (prefers-color-scheme: light)
