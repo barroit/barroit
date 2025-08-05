@@ -102,7 +102,7 @@ export default function Flicker({ children, className })
 	{
 		if (!reduced && shell) {
 			shell.current ??= {}
-			shell.current.flicker = { type: 'mouseenter', cb }
+			shell.current.flicker = { type: 'pointerenter', cb }
 		}
 	}, [])
 
@@ -115,7 +115,7 @@ reduced ? (
 </span>
 ) : (
 <span ref={ box } className={ className }
-      onMouseEnter={ shell ? undefined : cb }>
+      onPointerEnter={ shell ? undefined : cb }>
 {chars.map((c, i) => (
   <span key={ i } className='duration-120'>{ c }</span>
 ))}

@@ -36,7 +36,7 @@ export default function Shell({ children, color, left, right, className })
 return (
 <div className='relative inline-block cursor-pointer'
      onClick={ event => handle_event(event, shell) }
-     onMouseEnter={ event => handle_event(event, shell) }>
+     onPointerEnter={ event => handle_event(event, shell) }>
   <ShellContext value={ shell }>
     <div className={ clsx('shell group/shell', className) }
          data-left={ left ?? '[' } data-right={ right ?? ']' }
