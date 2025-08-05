@@ -102,7 +102,7 @@ export default function Flicker({ children, className })
 	{
 		if (!reduced && shell) {
 			shell.current ??= {}
-			shell.current.flicker = { type: MouseEvent, cb }
+			shell.current.flicker = { type: 'mouseenter', cb }
 		}
 	}, [])
 

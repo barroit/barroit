@@ -17,7 +17,7 @@ function handle_event(event, shell)
 	const fns = Object.values(shell.current)
 
 	for (const fn of fns) {
-		if (event.nativeEvent instanceof fn.type)
+		if (event.type == fn.type)
 			fn.cb(event)
 	}
 }
