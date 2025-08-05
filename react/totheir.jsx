@@ -6,8 +6,8 @@
 export default function Totheir({ children, ...props })
 {
 return (
-<a target='_blank' rel='noopener noreferrer' {...props}>
-  {children}
+<a target='_blank' rel='noopener noreferrer' { ...props }>
+  { children }
 </a>
 ) /* return */
 }
