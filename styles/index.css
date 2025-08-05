@@ -13,8 +13,38 @@
 
 @import './theme/light.css';
 
-@utility tab-* {
-	tab-size: --value(integer);
+@theme {
+	--color-xneu-50:  oklch(0.985 0 0);
+	--color-xneu-100: oklch(0.960 0 0);
+	--color-xneu-200: oklch(0.945 0 0);
+	--color-xneu-300: oklch(0.931 0 0);
+	--color-xneu-400: oklch(0.800 0 0);
+	--color-xneu-500: oklch(0.670 0 0);
+	--color-xneu-600: oklch(0.540 0 0);
+	--color-xneu-700: oklch(0.410 0 0);
+	--color-xneu-800: oklch(0.320 0 0);
+	--color-xneu-900: oklch(0.270 0 0);
+	--color-xneu-950: oklch(0.2393 0 0);
+
+	--color-lneu-50:  oklch(0.986 0 0);
+	--color-lneu-100: oklch(0.965 0 0);
+	--color-lneu-200: oklch(0.950 0 0);
+	--color-lneu-300: oklch(0.938 0 0);
+	--color-lneu-400: oklch(0.810 0 0);
+	--color-lneu-500: oklch(0.680 0 0);
+	--color-lneu-600: oklch(0.550 0 0);
+	--color-lneu-700: oklch(0.420 0 0);
+	--color-lneu-800: oklch(0.330 0 0);
+	--color-lneu-900: oklch(0.275 0 0);
+	--color-lneu-950: oklch(0.245 0 0);
+}
+
+@utility bg-xneu-* {
+	background-color: --value(--color-xneu-*);
+}
+
+@utility text-xneu-* {
+	color: --value(--color-xneu-*);
 }
 
 @custom-variant light {
@@ -47,4 +77,8 @@ a, button {
 	cursor: pointer;
 
 	@apply duration-200;
+}
+
+.octicon {
+	display: inline-block;
 }
