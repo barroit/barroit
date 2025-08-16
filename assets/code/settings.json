@@ -257,6 +257,8 @@
                "punctuation.definition.template-expression.end.js",
                "punctuation.parenthesis.begin.regexp",
                "punctuation.parenthesis.end.regexp",
+               "punctuation.section.embedded.begin.js.jsx",
+               "punctuation.section.embedded.end.js.jsx",
                "punctuation.separator.comma.js",
                "punctuation.separator.comma.tsx",
                "punctuation.separator.delimiter.php",
