@@ -39,6 +39,11 @@
 	--color-lneu-950: oklch(0.245 0 0);
 }
 
+@utility text-vertical {
+	writing-mode: vertical-lr;
+	text-orientation: upright;
+}
+
 @utility bg-xneu-* {
 	background-color: --value(--color-xneu-*);
 }
