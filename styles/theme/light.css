@@ -3,11 +3,6 @@
  * Copyright 2025 Jiamu Sun <barroit@linux.com>
  */
 
-@utility lightbase {
-	color: var(--color-xneu-950);
-	background-color: #ffffff;
-}
-
 @media (prefers-color-scheme: light)
 {
 
@@ -23,5 +18,4 @@ a:visited {
 	outline-color: #2054cc;
 }
 
-}
-
+} /* prefers-color-scheme: light */

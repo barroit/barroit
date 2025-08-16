@@ -3,11 +3,6 @@
  * Copyright 2025 Jiamu Sun <barroit@linux.com>
  */
 
-@utility darkbase {
-	color: var(--color-xneu-200);
-	background-color: var(--color-xneu-950);
-}
-
 @media (prefers-color-scheme: dark)
 {
 
@@ -23,4 +18,4 @@ a:visited {
 	outline-color: #99c3ff;
 }
 
-}
+} /* prefers-color-scheme: dark */

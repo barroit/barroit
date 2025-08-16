@@ -44,20 +44,6 @@
 	text-orientation: upright;
 }
 
-@utility bg-xneu-* {
-	background-color: --value(--color-xneu-*);
-}
-
-@utility text-xneu-* {
-	color: --value(--color-xneu-*);
-}
-
-@custom-variant light {
-	@media (prefers-color-scheme: light) {
-		@slot;
-	}
-}
-
 html {
 	tab-size: 8;
 	color-scheme: light dark;
