@@ -3,10 +3,13 @@
  * Copyright 2025 Jiamu Sun <barroit@linux.com>
  */
 
-body {
+@utility darkbase {
 	color: #e8e8e8;
 	background-color: #1f1f1f;
 }
+
+@media (prefers-color-scheme: dark)
+{
 
 a {
 	color: #99c3ff;
@@ -27,4 +30,6 @@ button:hover {
 a:focus-visible,
 button:focus-visible {
 	outline-color: #99c3ff;
+}
+
 }

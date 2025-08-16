@@ -7,29 +7,36 @@
 
 @import 'tailwindcss';
 
+@theme {
+	--breakpoint-sm:  26rem;  /* 416 */
+	--breakpoint-xl:  48rem;  /* 768 */
+	--breakpoint-xl:  64rem;  /* 1024 */
+	--breakpoint-xl:  80rem;  /* 1280 */
+	--breakpoint-2xl: 120rem; /* 1920 */
+	--breakpoint-3xl: 160rem; /* 2560 */
+	--breakpoint-4xl: 240rem; /* 3840 */
+}
+
 @import './font.css';
 
 @import './shell.css';
 
-@media (prefers-color-scheme: dark)
-{
-	@import './theme/dark.css';
-}
+@import './theme/dark.css';
 
-@media (prefers-color-scheme: light)
-{
-	@import './theme/light.css';
-}
+@import './theme/light.css';
 
 html {
+	tab-size: 8;
 	font-size: clamp(14px, 1vw + 1vh, 18px);
 }
 
 body {
 	block-size: 100dvh;
-
-	font-family: 'JetBrains Mono', monospace;
 	line-height: 1.625;
+}
+
+code, kbd, samp, pre, body {
+	font-family: 'JetBrains Mono', monospace;
 }
 
 h1 { font-size: 2.7rem }
@@ -43,8 +50,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: bold;
 }
 
-a,
-button {
+a, button {
 	outline: 0.2rem solid transparent;
 	@apply duration-200;
 }
@@ -59,8 +65,7 @@ button {
 	cursor: pointer;
 }
 
-a:hover,
-.shell:hover a {
+a:hover, .shell:hover a {
 	text-decoration: underline;
 	text-decoration-thickness: 0.1rem;
 }
