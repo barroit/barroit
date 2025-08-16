@@ -358,5 +358,6 @@
    "workbench.editorAssociations": {
       "*.svg": "default"
    },
-   "workbench.secondarySideBar.defaultVisibility": "hidden"
+   "workbench.secondarySideBar.defaultVisibility": "hidden",
+   "yaml.format.singleQuote": true
 }
