@@ -3,6 +3,8 @@ barroit/.lowprior
 code/keybindings.json	$HOME/Library/Application Support/Code/User
 code/settings.json	$HOME/Library/Application Support/Code/User
 
+codespell/.codespellrc
+
 fastfetch/config.jsonc
 fastfetch/dotmiku
 
