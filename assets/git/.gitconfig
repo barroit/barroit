@@ -1,12 +1,13 @@
 [advice]
 	detachedHead = false
-	statusHints = false
+	statusHints  = false
 	mergeConflict = false
 
 [core]
-	autocrlf = input
-	editor   = vim
-	abbrev   = 12
+	autocrlf  = input
+	editor    = vim
+	abbrev    = 12
+	quotepath = false
 
 [fetch]
 	prune = true
@@ -36,6 +37,6 @@
 	forceSignAnnotated = true
 
 [user]
-	name  = Jiamu Sun
-	email = barroit@linux.com
+	name       = Jiamu Sun
+	email      = barroit@linux.com
 	signingkey = EB6F4A6080F544F6
