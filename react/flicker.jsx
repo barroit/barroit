@@ -83,7 +83,10 @@ export default function Flicker({ children, className })
 	const enabled = useRef(0)
 	const shell = useContext(shell_ctx)
 
-	const chars = [ ...children ]
+	if (!Array.isArray(children))
+		children = [ children ]
+
+	const chars = children.join('').split('')
 	const imap = []
 	let i
 
