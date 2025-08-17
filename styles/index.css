@@ -45,12 +45,14 @@
 }
 
 html {
+	height: 100%;
+
 	tab-size: 8;
 	color-scheme: light dark;
 }
 
 body {
-	min-block-size: 100svh;
+	min-height: 100%;
 }
 
 a {
