@@ -15,6 +15,7 @@ show		git show
 stash		git stash
 status		git status
 switch		git switch
+staged		git diff --staged
 
 m		make
 g		gdb
