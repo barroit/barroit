@@ -1,0 +1,5 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+[submodule "site-lib"]
+	path = site-lib
+	url = ../site-lib.git
