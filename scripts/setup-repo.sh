@@ -1,8 +1,15 @@
 #!/bin/sh
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-ln -sf ../../../barroit/hooks/pre-commit.sh \
-       .git/hooks/pre-commit
+this=$(perl -e 'use Cwd "abs_path"; print abs_path(shift); "\n"' $0)
+root=$(dirname $this)/..
+hooks=$(git rev-parse --git-dir)/hooks
 
-ln -sf ../../../barroit/hooks/prepare-commit-msg.sh \
-       .git/hooks/prepare-commit-msg
+src=$(cat <<-EOF | perl -l - $root $hooks
+	require File::Spec;
+	print File::Spec->abs2rel(shift, shift);
+EOF
+)/hooks
+
+ln -sf $src/pre-commit.sh $hooks/pre-commit
+ln -sf $src/prepare-commit-msg.sh $hooks/prepare-commit-msg
