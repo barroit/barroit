@@ -1,10 +1,19 @@
+/* SPDX-License-Identifier: GPL-3.0-or-later */
+/*
+ * Copyright 2025 Jiamu Sun <barroit@linux.com>
+ */
+
 {
-   /* -------------------------------  Window  -------------------------------- */
+   "$schema": "vscode://schemas/settings/user",
+
+/* ui */
    "workbench.activityBar.location": "top",
    "window.restoreWindows": "none",
    "window.zoomLevel": 4,
    "explorer.autoReveal": false,
-   /* -------------------------------  Editor  -------------------------------- */
+   "problems.visibility": false,
+
+/* editor */
    "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "off",
    "workbench.editor.enablePreview": false,
    "workbench.editor.editorActionsLocation": "hidden",
@@ -13,8 +22,9 @@
    "editor.stickyScroll.enabled": false,
    "editor.minimap.enabled": false,
    "editor.scrollbar.horizontal": "hidden",
-   "problems.visibility": false,
-   /* -----------------------------  Suggestion  ------------------------------ */
+
+
+/* suggestion */
    "editor.codeLens": false,
    "editor.guides.indentation": false,
    "editor.quickSuggestions": {
@@ -32,25 +42,31 @@
    "extensions.ignoreRecommendations": true,
    "typescript.validate.enable": false,
    "javascript.validate.enable": false,
-   /* ---------------------------  Source Control  ---------------------------- */
+
+/* scm */
    "scm.showActionButton": false,
    "git.showCommitInput": false,
    "git.openRepositoryInParentFolders": "never",
    "git.mergeEditor": true,
-   /* ------------------------------  Highlight  ------------------------------ */
+
+/* highlight */
    "editor.occurrencesHighlight": "off",
    "editor.selectionHighlight": false,
    "editor.matchBrackets": "never",
    "editor.unicodeHighlight.includeStrings": false,
    "C_Cpp.dimInactiveRegions": false,
-   /* --------------------------------  Save  --------------------------------- */
+
+/* save */
    "files.autoSave": "onFocusChange",
    "files.insertFinalNewline": true,
-   /* -----------------------------  Indentation  ----------------------------- */
+
+/* indent */
    "editor.autoIndent": "brackets",
    "editor.detectIndentation": false,
    "editor.insertSpaces": false,
    "editor.tabSize": 8,
+
+/* lang overrides */
    "[cmake]": {
       "editor.insertSpaces": true,
       "editor.indentSize": 2
@@ -78,7 +94,11 @@
       "editor.tabSize": 8,
       "editor.indentSize": 2
    },
-   /* -------------------------  File Header Comment  ------------------------- */
+   "[restructuredtext-jp]": {
+      "editor.fontFamily": "Noto Sans Mono CJK JP"
+   },
+
+/* file header template */
    "fileHeaderComment.template": {
       "*": [
          "# SPDX-License-Identifier: ${license}"
@@ -122,15 +142,11 @@
          "============================= -->"
       ]
    },
-   /* ------------------------------  CodeSnap  ------------------------------- */
-   "codesnap.showWindowControls": false,
-   "codesnap.realLineNumbers": true,
-   "codesnap.roundedCorners": false,
-   "codesnap.shutterAction": "copy",
-   "codesnap.containerPadding": "0",
-   /* --------------------------------  Misc  --------------------------------- */
+
+/* cmake */
    "cmake.configureOnOpen": false,
-   /* -----------------------------  Association  ----------------------------- */
+
+/* association */
    "C_Cpp.autoAddFileAssociations": false,
    "files.associations": {
       "*gdbinit": "plaintext",
@@ -143,32 +159,36 @@
       ".config*": "plaintext",
       "*.h.in": "c",
       "*.hpp.in": "cpp",
-      "settings.json": "jsonc",
+      "settings.json": "jsonc"
    },
-   /* --------------------------------  Font  --------------------------------- */
-   "editor.fontFamily": "'JetBrains Mono'",
+
+/* font */
+   "editor.fontFamily": "'JetBrains Mono NL'",
    "editor.fontSize": 19,
-   /* ----------------------------  Color Scheme  ----------------------------- */
+
+/* colors */
    "workbench.colorTheme": "Default Dark Modern",
    "C_Cpp.enhancedColorization": "disabled",
    "workbench.colorCustomizations": {
-      "editorBracketHighlight.foreground1": "#A8A8A8",
-      "editorBracketHighlight.foreground2": "#A8A8A8",
-      "editorBracketHighlight.foreground3": "#A8A8A8",
-      "editorBracketHighlight.foreground4": "#A8A8A8",
-      "editorBracketHighlight.foreground5": "#A8A8A8",
-      "editorBracketHighlight.foreground6": "#A8A8A8",
-      "editor.foreground": "#A8A8A8",
+      "editorBracketHighlight.foreground1": "#a8a8a8",
+      "editorBracketHighlight.foreground2": "#a8a8a8",
+      "editorBracketHighlight.foreground3": "#a8a8a8",
+      "editorBracketHighlight.foreground4": "#a8a8a8",
+      "editorBracketHighlight.foreground5": "#a8a8a8",
+      "editorBracketHighlight.foreground6": "#a8a8a8",
+      "editor.foreground": "#a8a8a8",
       "editor.background": "#141414",
       "diffEditor.removedLineBackground": "#500000a0",
       "diffEditor.insertedLineBackground": "#2b3f14fa",
-      "diffEditor.insertedTextBackground": "#0000"
+      "diffEditor.insertedTextBackground": "#00000000"
    },
+
+/* tokens */
    "editor.tokenColorCustomizations": {
       "textMateRules": [
          {
             "settings": {
-               "foreground": "#CE9178"
+               "foreground": "#ce9178"
             },
             "scope": [
                "constant.other.placeholder"
@@ -176,7 +196,7 @@
          },
          {
             "settings": {
-               "foreground": "#C6C699"
+               "foreground": "#c6c699"
             },
             "scope": [
                "entity.name.function",
@@ -185,7 +205,7 @@
          },
          {
             "settings": {
-               "foreground": "#569CD6"
+               "foreground": "#569cd6"
             },
             "scope": [
                "entity.name.tag.css",
@@ -213,7 +233,7 @@
          },
          {
             "settings": {
-               "foreground": "#A8A8A8"
+               "foreground": "#a8a8a8"
             },
             "scope": [
                "comment",
@@ -295,6 +315,7 @@
                "support.function.lastword.makefile",
                "support.function.misc.css",
                "support.function.patsubst.makefile",
+               "support.function.perl",
                "support.function.powershell",
                "support.function.r",
                "support.function.realpath.makefile",
@@ -334,7 +355,7 @@
          },
          {
             "settings": {
-               "foreground": "#ACC4A0"
+               "foreground": "#acc4a0"
             },
             "scope": [
                "constant.numeric.decimal",
@@ -344,7 +365,11 @@
          }
       ]
    },
+
+/* trust */
    "security.workspace.trust.untrustedFiles": "open",
+
+/* workbench */
    "workbench.navigationControl.enabled": false,
    "window.commandCenter": false,
    "window.menuBarVisibility": "hidden",
@@ -352,12 +377,14 @@
    "chat.commandCenter.enabled": false,
    "workbench.startupEditor": "none",
    "workbench.editor.empty.hint": "hidden",
-   "xml.symbols.maxItemsComputed": -1,
-   "editor.unicodeHighlight.ambiguousCharacters": false,
-   "javascript.updateImportsOnFileMove.enabled": "never",
    "workbench.editorAssociations": {
       "*.svg": "default"
    },
    "workbench.secondarySideBar.defaultVisibility": "hidden",
+
+/* misc */
+   "xml.symbols.maxItemsComputed": -1,
+   "editor.unicodeHighlight.ambiguousCharacters": false,
+   "javascript.updateImportsOnFileMove.enabled": "never",
    "yaml.format.singleQuote": true
 }
