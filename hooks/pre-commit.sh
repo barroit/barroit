@@ -26,7 +26,9 @@ if [ -z "$files" ]; then
 	exit 1
 fi
 
-git diff --cached --check
+if [ -z "$NO_DIFF_CHECK" ]; then
+	git diff --cached --check
+fi
 
 printf '%s\n' "$files" | xargs -P$(nproc) -n1 -- \
 codespell --config $HOME/.codespellrc --config $(pwd)/.codespellrc
