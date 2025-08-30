@@ -38,6 +38,8 @@ mutt/client.barroit@naver.com
 mutt/j25232sj@edu.tuis.ac.jp
 mutt/client.j25232sj@edu.tuis.ac.jp
 
+sqlite/.sqliterc
+
 ssh/config
 
 vim/.vimrc

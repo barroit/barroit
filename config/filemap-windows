@@ -6,6 +6,8 @@ git/ignore
 
 gpg/pgp.conf		$Env:APPDATA\gnupg
 
+sqlite/.sqliterc
+
 ssh/config
 
 vim/.vimrc

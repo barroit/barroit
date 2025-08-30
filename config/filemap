@@ -41,6 +41,8 @@ mutt/client.barroit@naver.com		$HOME/.mutt
 mutt/j25232sj@edu.tuis.ac.jp		$HOME/.mutt
 mutt/client.j25232sj@edu.tuis.ac.jp	$HOME/.mutt
 
+sqlite/.sqliterc	$HOME
+
 ssh/config		$HOME/.ssh
 
 vim/.vimrc		$HOME
