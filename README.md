@@ -2,57 +2,61 @@
 
                                 About barroit
 
-Here's Jiamu Sun, aka barroit. A Miku devotee, hardcore Vocaloid fan. Lives on
-their tracks in Japan with Miku, Teto, Luka, Gumi, and Akari. I go whenever they
-perform, including Vocaloid events, and sometimes go out with my dodeka Miku.
+Here's Jiamu Sun <barroit@linux.com>, aka barroit. A Miku devotee, hardcore
+Vocaloid fan. I live on their tracks in Japan with Miku, Teto, Luka, Gumi, and
+Akari. And go whenever they perform, including Vocaloid events. Also sometimes
+go out with my dodeka Miku.
 
-I started programming in my first year of high school. As I learned different
-design ways, read their practices, watched how open source projects do things,
-and got burned over and over again, my philosophy changed a lot.
+When I'm not at events, I'm working on the code. I started programming back in
+high school, and it's taken over most of my time ever since. Almost everything
+I ship is for myself, including game mods. You'll rarely see me write code for
+other people or for show. I just write code for things I actually care about.
 
-Now I'm a purely procedural guy. No overengineering crap in the source, no
-obscure parts, no hidden behaviors, and no IDE features in my environment. I
-stick with VS Code and Vim for source work and small edits. Workflow's fully
-integrated with Git and CLI.
+The setup is simple too. It's Ubuntu with Ghostty and VS Code on a 13900KF/4090
+box, Moonlander and three monitors on the desk, plus MacBook Air for coding
+outdoors. Also, *virtual* singer tracks. Looping them in the background is
+basically constant electronic doping for me.
 
-I have experience in many fields, including development of:
+Style stays the same, simple and consistent. Regardless of what language I'm
+using, I keep code as generic and procedural as possible, with no syntax sugar
+and no overengineering crap. Anything visual in the source is there for
+readability. Also, the workflow is fully integrated with shell scripts, gmake,
+and git.
+
+Along the way I've ended up building all kinds of things, including:
 
 	DIY PC
 	web backend and frontend
-	game mod
+	modding game
 	CLI program and framework
 	LLM program
 	Discord bot
 	DIY firmware
 	embedded system
-	environment init system
+	OS initialization framework
 	reusable code and config setup
 	Vocaloid songs
 
-Tech stack includes (partial):
+On the tool side I've touched a bit of everything, like:
 
 	Spring MVC, Spring Boot
 	MySQL, MongoDB, SQLite3
-	Docker, NGINX, Redis, RabbitMQ
+	Docker, Nginx, Redis, RabbitMQ
 	Spigot API, Paper API, NMS and packets
 	PyTorch, Transformers
 	Jekyll, Vue.js, React, React Router, Tailwind
 	Unix user commands, Bash, Zsh, Ash, PowerShell, Mutt
 	POSIX API, OpenSSL API, Win32 API
-	GNU Make, CMake, Binutils, LLVM, Sphinx
+	GNU Make, CMake, Binutils, GDB, LLDB, Sphinx
 	FreeRTOS, ESP-IDF
 	Aseprite, Unity Editor, Unity ECS system
 	Discord.js, Node.js addon, Cloudflare Worker
-	Voicepeak, Voiceroid, Studio One, Piapro Studio
+	Voicepeak, Voiceroid, VoiSona, Studio One, Piapro Studio
 
-I speak:
+And day to day I switch between:
 
 	中文
 	English
 	日本語
-
-Contact me at:
-
-	Jiamu Sun <barroit@linux.com>
 
 ```
